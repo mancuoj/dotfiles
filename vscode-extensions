@@ -1,0 +1,16 @@
+code --list-extensions
+
+antfu.theme-vitesse
+eamodio.gitlens
+eserozvataf.one-dark-pro-monokai-darker
+formulahendry.code-runner
+k--kato.intellij-idea-keybindings
+miguelsolorio.fluent-icons
+MS-CEINTL.vscode-language-pack-zh-hans
+ms-vscode-remote.remote-wsl
+ritwickdey.LiveServer
+streetsidesoftware.code-spell-checker
+tal7aouy.icons
+w88975.code-translate
+wayou.vscode-todo-highlight
+yzhang.markdown-all-in-one

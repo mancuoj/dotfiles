@@ -1,0 +1,97 @@
+{
+    // font
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "'GoMono NF', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.5,
+    "editor.tabSize": 4,
+
+
+    // theme
+    "workbench.iconTheme": "icons",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.colorTheme": "One Dark Pro Monokai Darker",
+
+
+    // basic
+    "editor.lineNumbers": "interval",
+    "editor.dragAndDrop": false,
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.renderWhitespace": "selection",
+    "editor.linkedEditing": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.wordWrap": "off",
+    "editor.glyphMargin": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+
+    "window.menuBarVisibility": "compact",
+    "window.dialogStyle": "custom",
+
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 12,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 5,
+    
+    "security.workspace.trust.untrustedFiles": "open",
+    
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // git
+    "scm.alwaysShowRepositories": true,
+    "scm.autoReveal": true,
+    "scm.countBadge": "focused",
+    "scm.defaultViewMode": "tree",
+    "scm.inputFontSize": 15,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.untrackedChanges": "separate",
+
+
+    // terminal
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.lineHeight": 1.6,
+
+    // smooth
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+
+
+    // plugin cSpell
+    "cSpell.userWords": [
+        "antfu",
+        "aouy",
+        "autofetch",
+        "CEINTL",
+        "Consolas",
+        "dotfile",
+        "Dotfiles",
+        "eamodio",
+        "eserozvataf",
+        "formulahendry",
+        "intellij",
+        "kato",
+        "Mancuoj's",
+        "miguelsolorio",
+        "monokai",
+        "monospace",
+        "ritwickdey",
+        "vimrc",
+        "Vitesse",
+        "wayou",
+        "yzhang"
+    ],
+}
