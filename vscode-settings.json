@@ -5,13 +5,13 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "editor.lineHeight": 1.5,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
 
 
     // theme
     "workbench.iconTheme": "icons",
     "workbench.productIconTheme": "fluent-icons",
-    "workbench.colorTheme": "One Dark Pro Monokai Darker",
+    "workbench.colorTheme": "Vitesse Dark",
 
 
     // basic
@@ -76,6 +76,7 @@
         "aouy",
         "autofetch",
         "CEINTL",
+        "commandline",
         "Consolas",
         "dotfile",
         "Dotfiles",
@@ -94,4 +95,5 @@
         "wayou",
         "yzhang"
     ],
+    "C_Cpp.clang_format_fallbackStyle": "Google",
 }

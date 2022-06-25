@@ -1,5 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
+PATH="$PATH:$HOME/.local/bin"
+
 # 代理
 host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
 alias sss="export all_proxy=http://$host_ip:7890;export http_proxy=http://$host_ip:7890;export https_proxy=http://$host_ip:7890;"
@@ -37,6 +39,7 @@ plugins=(
   copyfile
   copypath
   copybuffer
+  thefuck
 )
 
 
