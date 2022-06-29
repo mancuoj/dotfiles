@@ -1,36 +1,33 @@
 {
     // font
     "editor.mouseWheelZoom": true,
-    "editor.fontFamily": "'GoMono NF', monospace",
+    "editor.fontFamily": "'SF Mono', '苹方-简', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "editor.lineHeight": 1.5,
-    "editor.tabSize": 2,
-
+    "editor.tabSize": 4,
 
     // theme
     "workbench.iconTheme": "icons",
     "workbench.productIconTheme": "fluent-icons",
-    "workbench.colorTheme": "Vitesse Dark",
-
+    "workbench.colorTheme": "Vitesse Light",
 
     // basic
     "editor.lineNumbers": "interval",
     "editor.dragAndDrop": false,
     "editor.find.addExtraSpaceOnTop": false,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.renderWhitespace": "selection",
     "editor.linkedEditing": true,
     "editor.suggest.insertMode": "replace",
     "editor.wordWrap": "off",
     "editor.glyphMargin": true,
-    "editor.guides.bracketPairs": "active",
     "editor.unicodeHighlight.invisibleCharacters": false,
-
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairs": "active",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "window.menuBarVisibility": "compact",
     "window.dialogStyle": "custom",
-
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 12,
     "workbench.tree.renderIndentGuides": "none",
@@ -39,9 +36,7 @@
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 5,
-    
     "security.workspace.trust.untrustedFiles": "open",
-    
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
 
@@ -56,12 +51,11 @@
     "git.enableSmartCommit": true,
     "git.untrackedChanges": "separate",
 
-
     // terminal
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.lineHeight": 1.6,
+    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.lineHeight": 1.2,
 
     // smooth
     "editor.cursorBlinking": "smooth",
@@ -69,31 +63,47 @@
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
 
-
     // plugin cSpell
     "cSpell.userWords": [
         "antfu",
         "aouy",
         "autofetch",
         "CEINTL",
+        "chezscheme",
+        "codespaces",
         "commandline",
         "Consolas",
+        "docsearch",
+        "donot",
         "dotfile",
         "Dotfiles",
         "eamodio",
+        "ecmel",
         "eserozvataf",
         "formulahendry",
         "intellij",
         "kato",
+        "keymap",
+        "Mancuoj",
         "Mancuoj's",
         "miguelsolorio",
         "monokai",
         "monospace",
+        "pylance",
         "ritwickdey",
+        "toolsai",
         "vimrc",
+        "vite",
+        "vitepress",
         "Vitesse",
+        "wakatime",
         "wayou",
         "yzhang"
     ],
-    "C_Cpp.clang_format_fallbackStyle": "Google",
+
+    // extension settings
+    "liveServer.settings.donotShowInfoMsg": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
 }

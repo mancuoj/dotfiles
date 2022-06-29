@@ -30,7 +30,6 @@ ZSH_THEME="spaceship"
 # copypath -> copypath || copypath <file>
 # copybuffer -> ctrl+o
 plugins=(
-  git
   gitfast
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -47,7 +46,20 @@ plugins=(
 alias s="nr start"
 alias d="nr dev"
 alias b="nr build"
+alias nio="ni --prefer-offline"
+alias lint="nr lint"
+alias lintf="nr lint:fix"
 
+# git
+alias gs="git status"
+alias gl="git log"
+alias glo="git log --oneline --graph"
+alias gb="git branch"
+alias gi="git init"
+alias gam="git add . && git commit -m"
+alias ga="git add ."
+alias gm="git commit -m"
+alias gp="git push"
 
 # 我的
 alias c="clear"
@@ -55,6 +67,23 @@ alias src="source ~/.zshrc"
 alias bat="batcat"
 alias cat="batcat"
 alias update="sudo apt update && sudo apt upgrade"
+
+clone() {
+  str=$1
+  str1=${str##*/}
+  result=${str1%.*}
+  echo "正在clone $result"
+  git clone $str && code $result
+}
+
+remove() {
+  if [ ! $1 ]; then
+    echo "请输入要删除的目录名称"
+    return 0
+  fi
+  echo "正在删除$1目录"
+  rm -rf $1 && echo "删除成功" || echo "删除失败,请重新尝试"
+}
 
 source $ZSH/oh-my-zsh.sh
 
