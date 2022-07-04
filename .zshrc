@@ -2,14 +2,14 @@ export ZSH="$HOME/.oh-my-zsh"
 
 PATH="$PATH:$HOME/.local/bin"
 
-# 代理
+# Great Wall
 host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
-alias sss="export all_proxy=http://$host_ip:7890;export http_proxy=http://$host_ip:7890;export https_proxy=http://$host_ip:7890;"
-alias uss="unset all_proxy;unset http_proxy;unset https_proxy;"
-# export hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
-# export all_proxy=http://$host_ip:7890
-# export http_proxy=http://$host_ip:7890
-# export https_proxy=http://$host_ip:7890
+export all_proxy=http://$host_ip:7890
+export http_proxy=http://$host_ip:7890
+export https_proxy=http://$host_ip:7890
+# alias sss="export all_proxy=http://$host_ip:7890;export http_proxy=http://$host_ip:7890;export https_proxy=http://$host_ip:7890;"
+# alias uss="unset all_proxy;unset http_proxy;unset https_proxy;"
+
 
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
@@ -39,8 +39,8 @@ plugins=(
   copypath
   copybuffer
   thefuck
+  git-open
 )
-
 
 # npm i -g @antfu/ni
 alias s="nr start"
@@ -54,27 +54,21 @@ alias lintf="nr lint:fix"
 alias gs="git status"
 alias gl="git log"
 alias glo="git log --oneline --graph"
-alias gb="git branch"
-alias gi="git init"
 alias gam="git add . && git commit -m"
-alias ga="git add ."
-alias gm="git commit -m"
 alias gp="git push"
 
-# 我的
+alias gb="git branch"
+alias gm="git merge"
+
+alias go="git open"
+alias gc="hub clone" 
+
+# sth bad
 alias c="clear"
 alias src="source ~/.zshrc"
 alias bat="batcat"
 alias cat="batcat"
 alias update="sudo apt update && sudo apt upgrade"
-
-clone() {
-  str=$1
-  str1=${str##*/}
-  result=${str1%.*}
-  echo "正在clone $result"
-  git clone $str && code $result
-}
 
 remove() {
   if [ ! $1 ]; then
