@@ -1,26 +1,32 @@
 code --list-extensions
 
+adpyke.codesnap
+antfu.file-nesting
 antfu.theme-vitesse
 eamodio.gitlens
 ecmel.vscode-html-css
 eg2.vscode-npm-script
 eserozvataf.one-dark-pro-monokai-darker
+file-icons.file-icons
 formulahendry.code-runner
 GitHub.codespaces
 jock.svg
 k--kato.intellij-idea-keybindings
 miguelsolorio.fluent-icons
-MS-CEINTL.vscode-language-pack-zh-hans
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-vscode-remote.remote-wsl
+noxiz.jinja-snippets
+qwtel.sqlite-viewer
 ritwickdey.LiveServer
 shd101wyy.markdown-preview-enhanced
 streetsidesoftware.code-spell-checker
 tal7aouy.icons
+VisualStudioExptTeam.intellicode-api-usage-examples
+VisualStudioExptTeam.vscodeintellicode
 w88975.code-translate
 WakaTime.vscode-wakatime
 wayou.vscode-todo-highlight

@@ -3,15 +3,22 @@
 - .zshrc
 - .vimrc
 - .tmux.conf
-- vscode (not dotfile)
-  - settings 
-  - extensions
-- ...
+- .vscode
+- 💕
 
 
-## Install
+## ZSH
 
 ```bash
+
+# built-in plugins
+dirhistory
+copyfile
+copypath
+copybuffer
+colored-man-pages
+command-not-found
+
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
@@ -38,15 +45,15 @@ git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
 # hub
 sudo apt install hub
 
+# ugit
+
+
+# fzf-tab
+
+
 # degit & ni
 npm i -g degit
 npm i -g @antfu/ni
-
-# built-in plugins
-dirhistory
-copyfile
-copypath
-copybuffer
 
 # proxy
 alias sss="export all_proxy=http://$host_ip:7890;export http_proxy=http://$host_ip:7890;export https_proxy=http://$host_ip:7890;"
