@@ -46,7 +46,7 @@ alias bat="batcat"
 alias cat="batcat"
 alias update="sudo apt update && sudo apt upgrade"
 alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
-
+alias hi="~/.me/hi.sh"
 
 remove() {
   if [ ! $1 ]; then
@@ -80,3 +80,7 @@ export http_proxy=http://$host_ip:7890
 export https_proxy=http://$host_ip:7890
 
 export PATH="/home/hh/g/git-fuzzy/bin:$PATH"
+
+
+# my
+source ~/.me/hi.sh

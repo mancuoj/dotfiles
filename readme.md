@@ -46,10 +46,10 @@ git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
 sudo apt install hub
 
 # ugit
-
+git clone https://github.com/Bhupesh-V/ugit.git $ZSH_CUSTOM/plugins/ugit
 
 # fzf-tab
-
+git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
 
 # degit & ni
 npm i -g degit
