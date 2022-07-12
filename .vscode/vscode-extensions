@@ -3,6 +3,7 @@ code --list-extensions
 adpyke.codesnap
 antfu.file-nesting
 antfu.theme-vitesse
+atomiks.moonlight
 eamodio.gitlens
 ecmel.vscode-html-css
 eg2.vscode-npm-script
@@ -10,6 +11,7 @@ eserozvataf.one-dark-pro-monokai-darker
 file-icons.file-icons
 formulahendry.code-runner
 GitHub.codespaces
+GitHub.github-vscode-theme
 jock.svg
 k--kato.intellij-idea-keybindings
 miguelsolorio.fluent-icons

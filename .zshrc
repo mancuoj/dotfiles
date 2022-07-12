@@ -14,7 +14,6 @@ plugins=(
   copybuffer
   thefuck
   git-open
-  colored-man-pages
   command-not-found
   ugit
   fzf-tab
@@ -37,16 +36,8 @@ alias gp="git push"
 alias gb="git branch"
 
 alias go="git open"
-alias gc="hub clone" 
+alias gc="hub clone"
 
-# sth bad
-alias c="clear"
-alias src="source ~/.zshrc"
-alias bat="batcat"
-alias cat="batcat"
-alias update="sudo apt update && sudo apt upgrade"
-alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
-alias hi="~/.me/hi.sh"
 
 remove() {
   if [ ! $1 ]; then
@@ -81,6 +72,20 @@ export https_proxy=http://$host_ip:7890
 
 export PATH="/home/hh/g/git-fuzzy/bin:$PATH"
 
-
 # my
+alias c="clear"
+alias src="source ~/.zshrc"
+alias bat="batcat"
+alias cat="batcat"
+alias update="sudo apt update && sudo apt upgrade"
+alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+alias hi="~/.me/hi.sh"
 source ~/.me/hi.sh
+
+# exa
+alias ls="exa --icons --ignore-glob=\"*pycache*|*package*|*venv*\""
+alias lt="exa --icons --tree --level=2 --ignore-glob=\"*pycache*|*package*|*venv*\""
+alias lr="exa --icons --recurse --ignore-glob=\"*pycache*|*package*|*venv*\""
+alias l1="exa --icons -1"
+alias la="exa --icons --all"
+alias ll="exa --header --long"
