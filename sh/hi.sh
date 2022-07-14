@@ -3,7 +3,10 @@ M="`date +%M`"
 S="`date +%S`"
 
 printf "\033[32m"
-if [ $H -gt 6 ] && [ $H -lt 11 ]
+if [ $H -lt 6 ]
+then
+    printf "滚去睡觉 😡😡"
+elif [ $H -lt 11 ]
 then
     printf "今天又是充满希望的一天 😆"
 elif [ $H -lt 13 ]
@@ -15,7 +18,7 @@ then
 elif [ $H -lt 23 ]
 then
     printf "看会儿书吧 📑"
-else 
+else
     printf "滚去睡觉 😡😡"
 fi
 
