@@ -80,12 +80,12 @@ alias cat="batcat"
 alias update="sudo apt update && sudo apt upgrade"
 alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 alias hi="~/.me/hi.sh"
-source ~/.me/hi.sh
+# source ~/.me/hi.sh
 
 # exa
-alias ls="exa --icons --ignore-glob=\"*pycache*|*package*|*venv*\""
-alias lt="exa --icons --tree --level=2 --ignore-glob=\"*pycache*|*package*|*venv*\""
-alias lr="exa --icons --recurse --ignore-glob=\"*pycache*|*package*|*venv*\""
+alias ls="exa --icons --ignore-glob=\"*pycache*|*package*\""
+alias lt="exa --icons --tree --level=2 --ignore-glob=\"*pycache*|*package*\""
+alias lr="exa --icons --recurse --ignore-glob=\"*pycache*|*package*\""
 alias l1="exa --icons -1"
 alias la="exa --icons --all"
 alias ll="exa --header --long"

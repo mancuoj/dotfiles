@@ -1,7 +1,7 @@
 {
-    // font 
+    // font
     "editor.mouseWheelZoom": true,
-    "editor.fontFamily": "'SF Mono', '苹方-简', 'DM Mono', 'Glow Sans J', monospace",
+    "editor.fontFamily": "'DM Mono', '苹方-简', 'Glow Sans J', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "editor.lineHeight": 1.6,
@@ -23,15 +23,15 @@
     "editor.wordWrap": "off",
     "editor.glyphMargin": true,
     "editor.semanticHighlighting.enabled": true,
-    
-    "emmet.useInlineCompletions": true,
 
     "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.guides.indentation": false,
     "editor.guides.bracketPairs": "active",
     "editor.bracketPairColorization.enabled": true,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 
+    "emmet.useInlineCompletions": true,
 
     "window.commandCenter": true,
     "window.menuBarVisibility": "compact",
@@ -95,7 +95,7 @@
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
     "explorer.fileNesting.patterns": {
-        "//": "Last update at 7/12/2022, 11:14:12 PM",
+        "//": "Last update at 7/15/2022, 12:33:58 PM",
         "*.asax": "$(capture).*.cs, $(capture).*.vb",
         "*.ascx": "$(capture).*.cs, $(capture).*.vb",
         "*.ashx": "$(capture).*.cs, $(capture).*.vb",
@@ -214,6 +214,7 @@
         "Fura",
         "gitmessage",
         "gitmodules",
+        "gsap",
         "heex",
         "htmlnanorc",
         "huskyrc",
@@ -231,6 +232,7 @@
         "miguelsolorio",
         "monokai",
         "monospace",
+        "mousedown",
         "mysite",
         "nuxt",
         "phpcs",
@@ -280,6 +282,7 @@
         "wayou",
         "werkzeug",
         "windi",
-        "yzhang"
+        "yzhang",
+        "Zheng"
     ],
 }
