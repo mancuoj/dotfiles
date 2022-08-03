@@ -1,7 +1,7 @@
 {
     // font
     "editor.mouseWheelZoom": true,
-    "editor.fontFamily": "'DM Mono', '苹方-简', 'Glow Sans J', monospace",
+    "editor.fontFamily": "'Camingo Code', '苹方-简', 'Glow Sans J', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "editor.lineHeight": 1.6,
@@ -10,7 +10,6 @@
     // theme
     "workbench.iconTheme": "file-icons",
     "workbench.productIconTheme": "fluent-icons",
-    "workbench.colorTheme": "GitHub Dark",
 
     // basic
     "editor.lineNumbers": "interval",
@@ -30,6 +29,7 @@
     "editor.guides.bracketPairs": "active",
     "editor.bracketPairColorization.enabled": true,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.inlineSuggest.enabled": true,
 
     "emmet.useInlineCompletions": true,
 
@@ -39,6 +39,7 @@
 
     "workbench.preferredDarkColorTheme":"Vitesse Dark",
     "workbench.preferredLightColorTheme": "GitHub Light",
+    "workbench.colorTheme": "Vitesse Dark",
 
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 12,
@@ -81,21 +82,46 @@
 
     // extensions
     "liveServer.settings.donotShowInfoMsg": true,
-    "code-runner.runInTerminal": true,
-    "code-runner.saveAllFilesBeforeRun": true,
-    "code-runner.saveFileBeforeRun": true,
     "fileNestingUpdater.promptOnAutoUpdate": false,
     "workbench.editorAssociations": {
         "*.db": "sqlite-viewer.option"
     },
+    "cmake.configureOnOpen": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4, NamespaceIndentation: All }",
 
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
 
-    // updated 2022-06-30 05:30
+    "leetcode.defaultLanguage": "c",
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.useWsl": true,
+    "leetcode.workspaceFolder": "/home/hh/testany/leetcode",
+    "leetcode.hint.commandShortcut": false,
+    "leetcode.hint.commentDescription": false,
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.editor.shortcuts": [
+        "test",
+        "submit",
+        "solution",
+        "description"
+    ],
+
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "jsonc": false,
+        "c": false
+    },
+    
+
     // https://github.com/antfu/vscode-file-nesting-config
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
     "explorer.fileNesting.patterns": {
-        "//": "Last update at 7/15/2022, 12:33:58 PM",
+        "//": "Last update at 8/4/2022, 12:13:27 AM",
         "*.asax": "$(capture).*.cs, $(capture).*.vb",
         "*.ascx": "$(capture).*.cs, $(capture).*.vb",
         "*.ashx": "$(capture).*.cs, $(capture).*.vb",
@@ -119,7 +145,7 @@
         "*.pubxml": "$(capture).pubxml.user",
         "*.resx": "$(capture).*.resx, $(capture).designer.cs, $(capture).designer.vb",
         "*.tex": "$(capture).acn, $(capture).acr, $(capture).alg, $(capture).aux, $(capture).bbl, $(capture).blg, $(capture).fdb_latexmk, $(capture).fls, $(capture).glg, $(capture).glo, $(capture).gls, $(capture).idx, $(capture).ind, $(capture).ist, $(capture).lof, $(capture).log, $(capture).lot, $(capture).out, $(capture).pdf, $(capture).synctex.gz, $(capture).toc, $(capture).xdv",
-        "*.ts": "$(capture).js, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
+        "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
         "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx",
         "*.vbproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
         "*.vue": "$(capture).*.ts, $(capture).*.js",
@@ -158,7 +184,6 @@
     },
 
 
-    // cSpell
     "cSpell.userWords": [
         "antfu",
         "aouy",
@@ -173,6 +198,7 @@
         "bazelrc",
         "browserslist",
         "bundleconfig",
+        "Camingo",
         "CEINTL",
         "chezscheme",
         "circleci",
@@ -202,6 +228,7 @@
         "dprint",
         "eamodio",
         "ecmel",
+        "ello",
         "endfor",
         "envrc",
         "eserozvataf",
@@ -223,6 +250,7 @@
         "kato",
         "keymap",
         "latexmk",
+        "leetcode",
         "leex",
         "lighthouserc",
         "lintstagedrc",
@@ -247,22 +275,26 @@
         "pyrightconfig",
         "rawblock",
         "releaserc",
+        "reprs",
         "resx",
         "rgbt",
         "RGBTRIPLE",
         "ritwickdey",
+        "Rustaceans",
         "rustfmt",
         "selectedtext",
         "sobelx",
         "sobely",
         "sourcemode",
         "stackblitz",
+        "STRNE",
         "styleci",
         "stylelint",
         "sumshares",
         "synctex",
         "tazerc",
         "terserrc",
+        "testany",
         "textlint",
         "Tideman",
         "tldr",
@@ -285,4 +317,5 @@
         "yzhang",
         "Zheng"
     ],
+   
 }
