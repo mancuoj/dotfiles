@@ -38,7 +38,6 @@ alias gb="git branch"
 alias go="git open"
 alias gc="hub clone"
 
-
 remove() {
   if [ ! $1 ]; then
     echo "请输入要删除的目录名称"
@@ -46,6 +45,17 @@ remove() {
   fi
   echo "正在删除$1目录"
   rm -rf $1 && echo "删除成功" || echo "删除失败,请重新尝试"
+}
+
+u() {
+  if [ ! $1 ]; then
+    echo "请输入要更新的目录名称"
+    return 0
+  fi
+  z $1
+  gam "feat: update"
+  gp
+  cd - && echo "更新成功" || echo "更新失败,请重新尝试"
 }
 
 # fzf-tab
