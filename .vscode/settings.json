@@ -1,35 +1,66 @@
 {
-    "editor.fontFamily": "'Maple Mono', '霞鹜文楷 GB 屏幕阅读版', 'Glow Sans J'",
+    "editor.fontFamily": "'Maple Mono', '霞鹜文楷 GB 屏幕阅读版'",
     "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "editor.lineHeight": 1.6,
-    "editor.tabSize": 4,
+    "editor.fontSize": 18,
+    "editor.lineHeight": 1.7,
+    "editor.letterSpacing": 0.3,
+    "editor.tabSize": 2,
     "editor.mouseWheelZoom": true,
+    "editor.lineNumbers": "interval",
+    "editor.wordWrap": "off",
+    "editor.cursorWidth": 2,
+
+    // terminal
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.fontFamily": "Maple Mono SC NF",
+    "terminal.integrated.shellIntegration.enabled": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+
+    // smooth
+    "editor.cursorBlinking": "smooth",
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
 
     // basic
-    "editor.lineNumbers": "interval",
+    "editor.formatOnPaste": true,
     "editor.dragAndDrop": false,
     "editor.minimap.enabled": false,
     "editor.find.addExtraSpaceOnTop": false,
-    "editor.renderWhitespace": "selection",
-    "editor.linkedEditing": true,
     "editor.suggest.insertMode": "replace",
-    "editor.wordWrap": "off",
-    "editor.glyphMargin": true,
-    "editor.semanticHighlighting.enabled": true,
 
+    "editor.linkedEditing": true,
+    "editor.renderWhitespace": "selection",
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.renderLineHighlight": "gutter",
+
     "editor.guides.indentation": false,
     "editor.guides.bracketPairs": "active",
+    "editor.guides.bracketPairsHorizontal": "active",
+    "editor.guides.highlightActiveBracketPair": true,
+    "editor.guides.highlightActiveIndentation": true,
+
     "editor.bracketPairColorization.enabled": true,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
     "editor.inlineSuggest.enabled": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.matchOnWordStartOnly": true,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    },
 
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
-                "scope": "comment",
+                "scope": ["comment"],
                 "settings": {
                     "fontStyle": "italic"
                 }
@@ -40,9 +71,7 @@
     "emmet.useInlineCompletions": true,
 
     "window.commandCenter": true,
-    "window.menuBarVisibility": "compact",
     "window.dialogStyle": "custom",
-    "window.zoomLevel": 1,
 
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 12,
@@ -52,6 +81,11 @@
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 5,
+    "workbench.editor.languageDetection": true,
+    "workbench.editor.languageDetectionHints": {
+        "untitledEditors": true,
+        "notebookEditors": true
+    },
 
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
@@ -68,14 +102,6 @@
     "git.enableSmartCommit": true,
     "git.untrackedChanges": "separate",
     "gitlens.codeLens.enabled": false,
-
-    // terminal
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontSize": 20,
-    "terminal.integrated.lineHeight": 1.2,
-    "terminal.integrated.fontFamily": "Maple Mono SC NF",
-    "terminal.integrated.shellIntegration.enabled": true,
 
     // extensions
     "liveServer.settings.donotShowInfoMsg": true,
@@ -114,7 +140,7 @@
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
     "explorer.fileNesting.patterns": {
-        "//": "Last update at 9/2/2022, 10:49:55 AM",
+        "//": "Last update at 9/8/2022, 10:40:29 PM",
         "*.asax": "$(capture).*.cs, $(capture).*.vb",
         "*.ascx": "$(capture).*.cs, $(capture).*.vb",
         "*.ashx": "$(capture).*.cs, $(capture).*.vb",
@@ -144,6 +170,8 @@
         "*.vbproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
         "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
         "*.xaml": "$(capture).xaml.cs",
+        "+layout.svelte": "+layout.ts,+layout.ts,+layout.js,+layout.server.ts,+layout.server.js",
+        "+page.svelte": "+page.server.ts,+page.server.js,+page.ts,+page.js ",
         ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
         ".env": "*.env, .env.*, .envrc, env.d.ts",
         ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
@@ -193,6 +221,7 @@
         "bazz",
         "bilibili",
         "browserslist",
+        "btns",
         "bundleconfig",
         "Camingo",
         "CEINTL",
@@ -244,10 +273,12 @@
         "gitmodules",
         "gsap",
         "heex",
+        "highscore",
         "histoire",
         "htmlnanorc",
         "huskyrc",
         "intellij",
+        "jonasschmedtman",
         "jsonify",
         "kato",
         "keymap",
@@ -341,21 +372,8 @@
         "Zheng"
     ],
 
-    // smooth
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.smoothScrolling": true,
-    "workbench.list.smoothScrolling": true,
-
     // formatter
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4, NamespaceIndentation: All }",
-
-    "prettier.enable": true,
-    "prettier.printWidth": 200,
-    "prettier.semi": false,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
-    "prettier.singleAttributePerLine": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 2, TabWidth: 2, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4, NamespaceIndentation: All }",
 
     /* 
     "editor.codeActionsOnSave": {
@@ -372,16 +390,31 @@
     "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact", "vue", "html", "markdown", "json", "jsonc", "json5"],
     */
 
+    "prettier.enable": true,
+    "prettier.printWidth": 200,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 2,
+    "prettier.arrowParens": "avoid",
+
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
     "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "symbols",
-    "workbench.colorTheme": "Vitesse Light"
+    "workbench.colorTheme": "Visual Studio Dark",
+    "window.zoomLevel": 1
 }
