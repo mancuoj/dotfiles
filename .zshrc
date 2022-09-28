@@ -20,6 +20,7 @@ alias gs="git status"
 alias ga="git add"
 alias gam="git add . && git commit -m"
 alias gp="git push"
+alias gamp="gam \"feat: update\" && gp"
 alias go="git open"
 alias gl="git log"
 alias glo="git log --oneline --graph"
@@ -95,6 +96,13 @@ export https_proxy=http://$host_ip:7890
 # -------------------------------- #
 #              nvm                 #
 # -------------------------------- #
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
+
+
+# -------------------------------- #
+#              fnm                 #
+# -------------------------------- #
+export PATH=/home/hh/.fnm:$PATH
+eval "`fnm env --use-on-cd`"

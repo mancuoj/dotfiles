@@ -15,7 +15,7 @@
     // sth else
     "files.autoGuessEncoding": true,
     "extensions.ignoreRecommendations": true,
-    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.enabled": false,
     "explorer.confirmDragAndDrop": false,
 
     "symbols.hidesExplorerArrows": true,
@@ -39,7 +39,7 @@
     "window.menuBarVisibility": "compact",
     "workbench.sideBar.location": "right",
 
-    "workbench.colorTheme": "Vitesse Light",
+    "workbench.colorTheme": "Vitesse Light Soft",
     "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "symbols",
 }
