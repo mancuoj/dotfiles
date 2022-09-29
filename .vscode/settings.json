@@ -1,4 +1,7 @@
 {
+    /**************************************
+    *             minimal                 *
+    **************************************/
     // smooth
     "editor.cursorBlinking": "smooth",
     "editor.mouseWheelZoom": true,
@@ -14,9 +17,8 @@
 
     // sth else
     "files.autoGuessEncoding": true,
-    "extensions.ignoreRecommendations": true,
-    "security.workspace.trust.enabled": false,
     "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "none",
 
     "symbols.hidesExplorerArrows": true,
     "code-runner.runInTerminal": true,
@@ -36,10 +38,9 @@
     "editor.minimap.enabled": false,
 
     "window.commandCenter": true,
-    "window.menuBarVisibility": "compact",
     "workbench.sideBar.location": "right",
 
-    "workbench.colorTheme": "Vitesse Light Soft",
+    "workbench.colorTheme": "Vitesse Light",
     "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "symbols",
 }

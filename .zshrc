@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # -------------------------------- #
-#              Git                 #
+#              git                 #
 # -------------------------------- #
 alias gs="git status"
 alias ga="git add"
@@ -28,7 +28,7 @@ alias main='git checkout main'
 
 
 # -------------------------------- #
-#           antfu/ni               #
+#           @antfu/ni              #
 # -------------------------------- #
 alias s="nr start"
 alias d="nr dev"
@@ -37,7 +37,7 @@ alias nio="ni --prefer-offline"
 
 
 # -------------------------------- #
-#              custom              #
+#         custom alias             #
 # -------------------------------- #
 alias zshconf="code ~/.zshrc"
 alias update="sudo apt update && sudo apt upgrade"
@@ -91,14 +91,6 @@ host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
 export all_proxy=http://$host_ip:7890
 export http_proxy=http://$host_ip:7890
 export https_proxy=http://$host_ip:7890
-
-
-# -------------------------------- #
-#              nvm                 #
-# -------------------------------- #
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
 
 
 # -------------------------------- #
