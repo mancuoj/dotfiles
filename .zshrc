@@ -8,6 +8,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   git-open
+  fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -16,15 +17,22 @@ source $ZSH/oh-my-zsh.sh
 # -------------------------------- #
 #              git                 #
 # -------------------------------- #
+alias gi="git init"
 alias gs="git status"
 alias ga="git add"
 alias gam="git add . && git commit -m"
 alias gp="git push"
+alias gamf="gam \"feat: update\""
 alias gamp="gam \"feat: update\" && gp"
 alias go="git open"
 alias gl="git log"
 alias glo="git log --oneline --graph"
-alias main='git checkout main'
+alias gpl="git pull"
+alias gm="git merge"
+alias gco="git checkout"
+alias gcod="git checkout dev"
+alias main="git checkout main"
+alias create="hub create && gp -u origin HEAD"
 
 
 # -------------------------------- #
@@ -54,11 +62,6 @@ function dir() {
   mkdir $1 && cd $1
 }
 
-function create() {
-  hub create && gp -u origin HEAD
-}
-
-
 function clone() {
   if [[ -z $2 ]] then
     hub clone "$@" && cd "$(basename "$1" .git)"
@@ -79,9 +82,9 @@ function codeh() {
 # -------------------------------- #
 #               ?                  #
 # -------------------------------- #
-zstyle ':omz:update' mode auto          
+zstyle ':omz:update' mode auto
 ENABLE_CORRECTION="true"               
-DISABLE_UNTRACKED_FILES_DIRTY="true"   
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 
 # -------------------------------- #
@@ -98,3 +101,15 @@ export https_proxy=http://$host_ip:7890
 # -------------------------------- #
 export PATH=/home/hh/.fnm:$PATH
 eval "`fnm env --use-on-cd`"
+
+# -------------------------------- #
+#              fzf                 #
+# -------------------------------- #
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+zstyle ':completion:*:git-checkout:*' sort false
+zstyle ':completion:*:descriptions' format '[%d]'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+zstyle ':fzf-tab:*' switch-group ',' '.'
