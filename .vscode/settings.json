@@ -1,33 +1,4 @@
 {
-    "cSpell.userWords": [
-        "antfu",
-        "bandizip",
-        "chsh",
-        "degit",
-        "dotfiles",
-        "haha",
-        "Lxgw",
-        "mancuoj",
-        "muniucloud",
-        "nameserver",
-        "NOPASSWD",
-        "resolv",
-        "tldr",
-        "Typora",
-        "utools",
-        "Vite",
-        "Vitesse",
-        "wechat"
-    ],
-
-    "extensions.ignoreRecommendations": true,
-    "window.menuBarVisibility": "compact",
-    "security.workspace.trust.enabled": false,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-
-
     /**************************************
     *             minimal                 *
     **************************************/
@@ -68,6 +39,7 @@
 
     "window.commandCenter": true,
     "workbench.sideBar.location": "right",
+    "workbench.editor.tabCloseButton": "left",
 
     "workbench.colorTheme": "Vitesse Light",
     "workbench.productIconTheme": "icons-carbon",
