@@ -4,7 +4,6 @@
     **************************************/
     // smooth
     "editor.cursorBlinking": "smooth",
-    "editor.mouseWheelZoom": true,
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": true,
     "workbench.list.smoothScrolling": true,
@@ -32,6 +31,8 @@
     "editor.fontSize": 16,
     "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷等宽', monospace",
     "editor.fontLigatures": true,
+    "editor.mouseWheelZoom": true,
+
     "editor.lineHeight": 1.4,
     "editor.lineNumbers": "interval",
     "editor.inlineSuggest.enabled": true,
