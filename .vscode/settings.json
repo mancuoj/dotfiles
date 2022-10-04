@@ -14,7 +14,7 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.enableBell": true,
 
-    // sth else
+    // else
     "files.autoGuessEncoding": true,
     "explorer.confirmDragAndDrop": false,
     "workbench.startupEditor": "none",
