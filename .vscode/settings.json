@@ -10,9 +10,10 @@
     "terminal.integrated.smoothScrolling": true,
 
     // terminal
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "Maple Mono NF",
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.lineHeight": 1.3,
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.enableBell": true,
 
     // else
     "files.autoGuessEncoding": true,
@@ -29,20 +30,20 @@
 
     // view
     "editor.fontSize": 16,
-    "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷等宽', monospace",
+    // "editor.fontFamily": "'更纱黑体 Mono SC Nerd'",
+    "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷等宽'",
+    // "editor.fontFamily": "'Maple Hand'",
     "editor.fontLigatures": true,
+    "editor.lineHeight": 1.5,
     "editor.mouseWheelZoom": true,
 
-    "editor.lineHeight": 1.4,
     "editor.lineNumbers": "interval",
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
 
     "window.commandCenter": true,
-    "workbench.sideBar.location": "right",
     "workbench.editor.tabCloseButton": "left",
-
-    "workbench.colorTheme": "Vitesse Light",
     "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "symbols",
+    "workbench.colorTheme": "Vitesse Light",
 }

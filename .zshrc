@@ -23,7 +23,7 @@ alias gam="git add . && git commit -m"
 alias gp="git push"
 alias gamf="gam 'feat: update'"
 alias gamp="gamf && gp"
-alias go="git open"
+alias open="git open"
 alias gl="git log"
 alias glo="git log --oneline --graph"
 alias gpl="git pull"
@@ -56,8 +56,8 @@ function remove() {
   rm -rf $1
 }
 
-function dir() {
-  mkdir $1 && cd $1
+function mdh() {
+  mkdir ~/h/$1 && cd ~/h/$1
 }
 
 function clone() {
@@ -112,3 +112,10 @@ zstyle ':completion:*:descriptions' format '[%d]'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color=always $realpath'
 zstyle ':fzf-tab:*' switch-group ',' '.'
+
+# -------------------------------- #
+#              go                  #
+# -------------------------------- #
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
