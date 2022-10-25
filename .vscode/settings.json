@@ -9,16 +9,15 @@
     "workbench.list.smoothScrolling": true,
     "terminal.integrated.smoothScrolling": true,
 
-    // terminal
     "terminal.integrated.fontFamily": "Maple Mono NF",
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.lineHeight": 1.3,
     "terminal.integrated.cursorStyle": "line",
 
-    // else
     "files.autoGuessEncoding": true,
-    "explorer.confirmDragAndDrop": false,
     "workbench.startupEditor": "none",
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.tree.indent": 12,
 
     "symbols.hidesExplorerArrows": true,
     "code-runner.runInTerminal": true,
@@ -28,11 +27,11 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
 
-    // view
+
     "editor.fontSize": 16,
-    // "editor.fontFamily": "'更纱黑体 Mono SC Nerd'",
+    // "editor.fontFamily": "更纱黑体 Mono SC Nerd",
     "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷等宽'",
-    // "editor.fontFamily": "'Maple Hand'",
+    // "editor.fontFamily": "Maple Hand",
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.5,
     "editor.mouseWheelZoom": true,
@@ -43,7 +42,8 @@
 
     "window.commandCenter": true,
     "workbench.editor.tabCloseButton": "left",
+    "workbench.sideBar.location": "right",
     "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "symbols",
-    "workbench.colorTheme": "Vitesse Light",
+    "workbench.colorTheme": "GitHub Light Colorblind (Beta)",
 }

@@ -1,6 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="random"
+ZSH_THEME="simple"
 
 plugins=(
   git
@@ -16,21 +17,28 @@ source $ZSH/oh-my-zsh.sh
 # -------------------------------- #
 #              git                 #
 # -------------------------------- #
-alias gi="git init"
-alias gs="git status"
 alias ga="git add"
-alias gam="git add . && git commit -m"
 alias gp="git push"
-alias gamf="gam 'feat: update'"
-alias gamp="gamf && gp"
-alias open="git open"
+alias gs="git status"
 alias gl="git log"
 alias glo="git log --oneline --graph"
 alias gpl="git pull"
 alias gm="git merge"
-alias gco="git checkout"
-alias main="git checkout main"
+
+alias open="git open"
+
+alias gi="git init && gam 'chore: init'"
+alias gam="git add . && git commit -m"
+alias gamf="gam 'feat: update'"
+alias gamp="gamf && gp"
+alias gpall="gp --all origin"
 alias create="hub create && gp -u origin HEAD"
+
+alias gb='git branch'
+alias gbd='git branch -d'
+alias gco="git checkout"
+alias gcob='git checkout -b'
+alias main="git checkout main"
 
 
 # -------------------------------- #
@@ -113,9 +121,17 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color=always $realpath'
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
+
 # -------------------------------- #
 #              go                  #
 # -------------------------------- #
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+
+# -------------------------------- #
+#             pnpm                 #
+# -------------------------------- #
+export PNPM_HOME="/home/hh/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
