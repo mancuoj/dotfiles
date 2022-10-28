@@ -1,4 +1,5 @@
 {
+    // minimal
     "recommendations": [
         "MS-CEINTL.vscode-language-pack-zh-hans",
         "antfu.icons-carbon",

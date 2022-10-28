@@ -2,7 +2,6 @@
     /**************************************
     *             minimal                 *
     **************************************/
-    // smooth
     "editor.cursorBlinking": "smooth",
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": true,
@@ -30,10 +29,11 @@
 
     "editor.fontSize": 16,
     // "editor.fontFamily": "更纱黑体 Mono SC Nerd",
-    "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷等宽'",
+    // "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷 GB 屏幕阅读版'",
     // "editor.fontFamily": "Maple Hand",
+    "editor.fontFamily": "Agave, '小赖字体 等宽 SC'",
     "editor.fontLigatures": true,
-    "editor.lineHeight": 1.5,
+    "editor.lineHeight": 1.7,
     "editor.mouseWheelZoom": true,
 
     "editor.lineNumbers": "interval",
@@ -42,7 +42,6 @@
 
     "window.commandCenter": true,
     "workbench.editor.tabCloseButton": "left",
-    "workbench.sideBar.location": "right",
     "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "symbols",
     "workbench.colorTheme": "GitHub Light Colorblind (Beta)",
