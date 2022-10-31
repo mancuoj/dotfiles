@@ -10,7 +10,7 @@
 
     "terminal.integrated.fontFamily": "Maple Mono NF",
     "terminal.integrated.fontSize": 18,
-    "terminal.integrated.lineHeight": 1.3,
+    "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.cursorStyle": "line",
 
     "files.autoGuessEncoding": true,
@@ -27,11 +27,11 @@
     "gitlens.currentLine.enabled": false,
 
 
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     // "editor.fontFamily": "更纱黑体 Mono SC Nerd",
     // "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷 GB 屏幕阅读版'",
     // "editor.fontFamily": "Maple Hand",
-    "editor.fontFamily": "Agave, '小赖字体 等宽 SC'",
+    "editor.fontFamily": "Agave, 'Maple UI'",
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.7,
     "editor.mouseWheelZoom": true,
