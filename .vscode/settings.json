@@ -1,7 +1,4 @@
 {
-    /**************************************
-    *             minimal                 *
-    **************************************/
     "editor.cursorBlinking": "smooth",
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": true,
@@ -28,10 +25,10 @@
 
 
     "editor.fontSize": 18,
-    // "editor.fontFamily": "更纱黑体 Mono SC Nerd",
+    "editor.fontFamily": "更纱黑体 Mono SC Nerd",
     // "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷 GB 屏幕阅读版'",
     // "editor.fontFamily": "Maple Hand",
-    "editor.fontFamily": "Agave, 'Maple UI'",
+    // "editor.fontFamily": "Agave, '苹方-简'",
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.7,
     "editor.mouseWheelZoom": true,
@@ -39,10 +36,11 @@
     "editor.lineNumbers": "interval",
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": true,
 
     "window.commandCenter": true,
     "workbench.editor.tabCloseButton": "left",
     "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "symbols",
-    "workbench.colorTheme": "Moegi Dark",
+    "workbench.colorTheme": "Vitesse Light",
 }
