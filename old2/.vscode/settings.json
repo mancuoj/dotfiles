@@ -42,6 +42,7 @@
         "mancuoj",
         "markupsafe",
         "minmax",
+        "Moegi",
         "msgid",
         "msgstr",
         "muniucloud",
@@ -93,18 +94,12 @@
         "yzhang",
         "zstyle"
     ],
-
-
-    "window.menuBarVisibility": "compact",
     "liveServer.settings.donotShowInfoMsg": true,
     "security.workspace.trust.enabled": false,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "editor.acceptSuggestionOnEnter": "on",
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
     "go.enableCodeLens": {
         "runtest": false
     },
@@ -116,40 +111,70 @@
     "explorer.confirmDragAndDrop": false,
     "editor.dragAndDrop": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
-    
     "java.debug.settings.enableRunDebugCodeLens": false,
     "rust-analyzer.lens.enable": false,
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4, NamespaceIndentation: All, FixNamespaceComments: false }",
     "C_Cpp.inlayHints.parameterNames.enabled": true,
     "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
     "C_Cpp.inlayHints.referenceOperator.enabled": true,
-
     "markdown.preview.fontFamily": "'Maple UI'",
     "redhat.telemetry.enabled": true,
-
-
-
-
-
-    /**************************************
-    *             minimal                 *
-    **************************************/
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "Comment Italics",
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    // *********************************************************************************** //
+    // *********************************************************************************** //
+    // *********************************************************************************** //
+    // *********************************************************************************** //
+    // *********************************************************************************** //
+    // smooth
     "editor.cursorBlinking": "smooth",
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": true,
     "workbench.list.smoothScrolling": true,
+    // terminal
     "terminal.integrated.smoothScrolling": true,
-
     "terminal.integrated.fontFamily": "Maple Mono NF",
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.cursorStyle": "line",
-
+    // common
+    "editor.fontSize": 18,
+    // "editor.fontFamily": "更纱黑体 Mono SC Nerd",
+    // "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷 GB 屏幕阅读版'",
+    // "editor.fontFamily": "Maple Hand",
+    // "editor.fontFamily": "Agave, '霞鹜文楷'",
+    "editor.fontFamily": "'Dank Mono', '霞鹜文楷'",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 1.7,
+    "editor.mouseWheelZoom": true,
+    "editor.lineNumbers": "interval",
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "window.commandCenter": true,
+    "workbench.editor.tabCloseButton": "left",
+    "window.menuBarVisibility": "compact",
+    /***********************************************************************************
+    ************************************************************************************ 
+    ************************************************************************************ 
+    ************************************************************************************
+    ***********************************************************************************/
     "files.autoGuessEncoding": true,
     "workbench.startupEditor": "none",
     "workbench.tree.renderIndentGuides": "none",
     "workbench.tree.indent": 12,
-
     "symbols.hidesExplorerArrows": true,
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
@@ -157,25 +182,7 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
-
-
-    "editor.fontSize": 18,
-    "editor.fontFamily": "更纱黑体 Mono SC Nerd",
-    // "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷 GB 屏幕阅读版'",
-    // "editor.fontFamily": "Maple Hand",
-    // "editor.fontFamily": "Agave, '苹方-简'",
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 1.7,
-    "editor.mouseWheelZoom": true,
-
-    "editor.lineNumbers": "interval",
-    "editor.inlineSuggest.enabled": true,
-    "editor.minimap.enabled": false,
-    "editor.stickyScroll.enabled": true,
-
-    "window.commandCenter": true,
-    "workbench.editor.tabCloseButton": "left",
     "workbench.productIconTheme": "icons-carbon",
-    "workbench.iconTheme": "symbols",
-    "workbench.colorTheme": "Vitesse Light",
+    "workbench.iconTheme": "file-icons",
+    "workbench.colorTheme": "Moegi Black",
 }
