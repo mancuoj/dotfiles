@@ -1,5 +1,6 @@
 WSL: Ubuntu-20.04 上安装的扩展:
 
+AnbuselvanRocky.bootstrap5-vscode
 antfu.slidev
 antfu.theme-vitesse
 antfu.unocss
@@ -29,7 +30,6 @@ redhat.java
 redhat.vscode-yaml
 ritwickdey.LiveServer
 rust-lang.rust-analyzer
-shd101wyy.markdown-preview-enhanced
 streetsidesoftware.code-spell-checker
 tamasfe.even-better-toml
 twxs.cmake
@@ -44,3 +44,4 @@ vscjava.vscode-maven
 Vue.volar
 w88975.code-translate
 WyattFerguson.jinja2-snippet-kit
+yzhang.markdown-all-in-one

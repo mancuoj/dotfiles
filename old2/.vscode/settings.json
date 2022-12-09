@@ -12,6 +12,7 @@
         "composables",
         "corejs",
         "crossorigin",
+        "CSAPP",
         "csdiy",
         "degit",
         "dimm",
@@ -19,12 +20,14 @@
         "dotenv",
         "dotfiles",
         "douban",
+        "fastapi",
         "Fira",
         "flaskenv",
         "Flexbox",
         "fonttools",
         "frontmatter",
         "giscus",
+        "gunicorn",
         "haha",
         "hhai",
         "hhcss",
@@ -33,10 +36,12 @@
         "iconfont",
         "Iconify",
         "imdb",
+        "imsize",
         "initdb",
         "Jetbrains",
         "Jimi",
         "jsonify",
+        "katex",
         "localeselector",
         "Lxgw",
         "mancuoj",
@@ -45,8 +50,10 @@
         "Moegi",
         "msgid",
         "msgstr",
+        "Multivariable",
         "muniucloud",
         "nameserver",
+        "nand",
         "NOPASSWD",
         "noreferrer",
         "nums",
@@ -54,6 +61,7 @@
         "Pocock",
         "pybabel",
         "pyfile",
+        "pythonanywhere",
         "rehype",
         "resolv",
         "runtest",
@@ -61,9 +69,12 @@
         "seacss",
         "seriph",
         "shiki",
+        "SICP",
+        "Sino",
         "sizechange",
         "Skywalker",
         "Slidev",
+        "smartarrows",
         "sqlalchemy",
         "stackblitz",
         "subframe",
@@ -71,8 +82,10 @@
         "tada",
         "tauri",
         "Tetris",
+        "texmath",
         "Themable",
         "tldr",
+        "todoapp",
         "todos",
         "Typora",
         "unocss",
@@ -82,6 +95,7 @@
         "Vite",
         "vitepress",
         "Vitesse",
+        "vnode",
         "vueuse",
         "Watchlist",
         "webfont",
@@ -92,33 +106,29 @@
         "wtforms",
         "xxxz",
         "yzhang",
+        "Zhang",
         "zstyle"
     ],
-    "liveServer.settings.donotShowInfoMsg": true,
-    "security.workspace.trust.enabled": false,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "editor.acceptSuggestionOnEnter": "on",
-    "go.enableCodeLens": {
-        "runtest": false
-    },
-    "git.confirmSync": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    /*******************************************************
+    *                     Extensions                       *
+    *******************************************************/
+    "symbols.hidesExplorerArrows": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+
     "workbench.editorAssociations": {
         "*.db": "sqlite-viewer.option"
     },
-    "explorer.confirmDragAndDrop": false,
-    "editor.dragAndDrop": false,
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "java.debug.settings.enableRunDebugCodeLens": false,
-    "rust-analyzer.lens.enable": false,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4, NamespaceIndentation: All, FixNamespaceComments: false }",
-    "C_Cpp.inlayHints.parameterNames.enabled": true,
-    "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
-    "C_Cpp.inlayHints.referenceOperator.enabled": true,
-    "markdown.preview.fontFamily": "'Maple UI'",
-    "redhat.telemetry.enabled": true,
+    
+
+    /*******************************************************
+    *                    Languages                         *
+    *******************************************************/
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -133,56 +143,89 @@
             }
         ]
     },
-    // *********************************************************************************** //
-    // *********************************************************************************** //
-    // *********************************************************************************** //
-    // *********************************************************************************** //
-    // *********************************************************************************** //
-    // smooth
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 2, TabWidth: 2, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4, NamespaceIndentation: All, FixNamespaceComments: false }",
+    "C_Cpp.inlayHints.parameterNames.enabled": true,
+    "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "[python]": {
+        "editor.tabSize": 4,
+    },
+    "[html]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+
+    "java.debug.settings.enableRunDebugCodeLens": false,
+    "rust-analyzer.lens.enable": false,
+    "python.formatting.provider": "black",
+
+    
+    /*******************************************************
+    *                       Smooth                         *
+    *******************************************************/
     "editor.cursorBlinking": "smooth",
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": true,
     "workbench.list.smoothScrolling": true,
-    // terminal
+
+
+    /*******************************************************
+    *                     Terminal                         *
+    *******************************************************/
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.fontFamily": "Maple Mono NF",
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.cursorStyle": "line",
-    // common
+    "terminal.integrated.defaultProfile.linux": "zsh",
+
+
+    /*******************************************************
+    *                       Font                           *
+    *******************************************************/
     "editor.fontSize": 18,
     // "editor.fontFamily": "更纱黑体 Mono SC Nerd",
     // "editor.fontFamily": "'Maple Mono NF', '霞鹜文楷 GB 屏幕阅读版'",
     // "editor.fontFamily": "Maple Hand",
-    // "editor.fontFamily": "Agave, '霞鹜文楷'",
+    // "editor.fontFamily": "'Hack Nerd Font', '霞鹜文楷'",
     "editor.fontFamily": "'Dank Mono', '霞鹜文楷'",
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.7,
     "editor.mouseWheelZoom": true,
+
+
+    /*******************************************************
+    *                      Common                          *
+    *******************************************************/
+    // "editor.tabSize": 2,
     "editor.lineNumbers": "interval",
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
     "editor.stickyScroll.enabled": true,
-    "window.commandCenter": true,
-    "workbench.editor.tabCloseButton": "left",
-    "window.menuBarVisibility": "compact",
-    /***********************************************************************************
-    ************************************************************************************ 
-    ************************************************************************************ 
-    ************************************************************************************
-    ***********************************************************************************/
+    // "editor.dragAndDrop": true,
+    "editor.acceptSuggestionOnEnter": "on",
+
+
+    /*******************************************************
+    *                      Others                          *
+    *******************************************************/
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.enabled": false,
     "files.autoGuessEncoding": true,
+
+    "window.commandCenter": true,
+    "window.menuBarVisibility": "compact",
+    "workbench.editor.tabCloseButton": "left",
     "workbench.startupEditor": "none",
     "workbench.tree.renderIndentGuides": "none",
     "workbench.tree.indent": 12,
-    "symbols.hidesExplorerArrows": true,
-    "code-runner.runInTerminal": true,
-    "code-runner.saveFileBeforeRun": true,
-    "code-runner.saveAllFilesBeforeRun": true,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
+
+    
+    /*******************************************************
+    *                      Themes                          *
+    *******************************************************/
     "workbench.productIconTheme": "icons-carbon",
-    "workbench.iconTheme": "file-icons",
-    "workbench.colorTheme": "Moegi Black",
+    "workbench.iconTheme": "symbols",
+    "redhat.telemetry.enabled": true,
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
 }
