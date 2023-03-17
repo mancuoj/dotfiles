@@ -1,0 +1,89 @@
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="intheloop"
+
+plugins=(
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  git-open
+  z
+  poetry
+  colored-man-pages
+)
+
+alias s="nr start"
+alias d="nr dev"
+alias b="nr build"
+
+alias gs="git status"
+alias ga="git add"
+alias gp="git push"
+alias gpl="git pull"
+alias gm="git merge"
+
+alias gb='git branch'
+alias gbd='git branch -d'
+alias gco="git checkout"
+alias gcob='git checkout -b'
+
+alias gi="git init && gam 'chore: init'"
+alias gam="ga . && git commit -m"
+alias open="git-open"
+alias main="git checkout main"
+
+alias zshconf="code ~/.zshrc"
+alias update="sudo apt update && sudo apt upgrade"
+alias ls="exa --icons"
+alias ll="exa --icons --all --long"
+alias l1="exa --icons --all --oneline"
+
+function lt() {
+  exa --tree --icons --level=$1 $2
+}
+
+function h() {
+  cd ~/h/$1
+}
+
+function mdh() {
+  mkdir ~/h/$1 && cd ~/h/$1
+}
+
+function remove() {
+  rm -rf $1
+}
+
+function clone() {
+  if [[ -z $2 ]] then
+    hub clone "$@" && cd "$(basename "$1" .git)"
+  else
+    hub clone "$@" && cd "$2"
+  fi
+}
+
+function cl() {
+  h && clone "$@" && code . && cd ~2
+}
+
+function co() {
+  h && code "$@" && cd -
+}
+
+host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
+export all_proxy=http://$host_ip:7890
+export http_proxy=http://$host_ip:7890
+export https_proxy=http://$host_ip:7890
+
+source $ZSH/oh-my-zsh.sh
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export PATH="/home/mancuoj/.local/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/mancuoj/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+export NEMU_HOME=/home/mancuoj/h/NJU-PA/nemu
+export AM_HOME=/home/mancuoj/h/NJU-PA/abstract-machine
+
+export PATH="/usr/lib/ccache:$PATH"
