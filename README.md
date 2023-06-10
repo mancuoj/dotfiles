@@ -9,6 +9,9 @@
 - [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)
 - [Maple Font](https://github.com/subframe7536/Maple-font/blob/v5/README_CN.md)
 - [更纱黑体](https://github.com/laishulu/Sarasa-Mono-SC-Nerd)
-- [SF Mono](https://github.com/supercomputra/SF-Mono-Font)
-- [其他](./fonts)
+- [Zed Fonts](https://github.com/zed-industries/zed-fonts)
+- [IBM Plex](https://github.com/IBM/plex)
+- [fontsource](https://fontsource.org/)
+- [ProgrammingFonts](https://github.com/ProgrammingFonts/ProgrammingFonts)
+- [其他](https://github.com/cancng/fonts)
 - ✨

@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="clean"
+ZSH_THEME="steeef"
 zstyle ':omz:update' mode auto      # update automatically without asking
 
 plugins=(
@@ -10,6 +10,7 @@ plugins=(
 
 alias zshconf="code ~/.zshrc"
 alias update="sudo apt update && sudo apt upgrade"
+alias ba="batcat"
 
 alias gs="git status"
 alias ga="git add"
