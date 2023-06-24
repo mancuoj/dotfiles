@@ -5,7 +5,9 @@ code --install-extension antfu.iconify
 code --install-extension antfu.open-in-github-button
 code --install-extension antfu.smart-clicks
 code --install-extension antfu.theme-vitesse
+code --install-extension antfu.where-am-i
 code --install-extension bradlc.vscode-tailwindcss
+code --install-extension cipchk.ng-zorro-vscode
 code --install-extension clinyong.vscode-css-modules
 code --install-extension csstools.postcss
 code --install-extension cyrilletuzi.angular-schematics
@@ -23,7 +25,6 @@ code --install-extension GitHub.vscode-pull-request-github
 code --install-extension jock.svg
 code --install-extension miguelsolorio.min-theme
 code --install-extension miguelsolorio.symbols
-code --install-extension MS-CEINTL.vscode-language-pack-zh-hans
 code --install-extension ms-python.black-formatter
 code --install-extension ms-python.isort
 code --install-extension ms-python.python
@@ -35,6 +36,7 @@ code --install-extension raunofreiberg.vesper
 code --install-extension redhat.vscode-yaml
 code --install-extension richie5um2.vscode-sort-json
 code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension tamasfe.even-better-toml
 code --install-extension unional.vscode-sort-package-json
 code --install-extension usernamehw.errorlens
 code --install-extension Vue.volar
