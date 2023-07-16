@@ -51,9 +51,9 @@
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.fontFamily": "MonoLisa Trial",
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.fontFamily": "Mononoki NF",
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.lineHeight": 1.85,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
@@ -126,9 +126,6 @@
   "prettier.enable": false,
   "prettier.trailingComma": "es5",
   "prettier.semi": false,
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -292,6 +289,7 @@
     "metaprogramming",
     "mkdocs",
     "Moegi",
+    "Mononoki",
     "mypy",
     "nextra",
     "Nuxt",
@@ -350,6 +348,7 @@
     "wenkai",
     "windi",
     "Wirfs",
+    "withdrwa",
     "xiaohongshu",
     "zoxide"
   ],
@@ -443,5 +442,5 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredLightColorTheme": "Vitesse Light",
   "workbench.preferredDarkColorTheme": "Moegi Space",
-  "workbench.colorTheme": "Evondev Dracula Minimal Contrast",
+  "workbench.colorTheme": "Evondev Dracula High Contrast",
 }
