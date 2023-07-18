@@ -1,7 +1,6 @@
+存了一些不会丢掉的配置文件。
 
-<pre align="center">
-⚙️ ZSH & VS Code
-</pre>
+我知道 VS Code 配置不算 dotfile，但多开一个仓库多麻烦哦。
 
 ## 字体下载
 
