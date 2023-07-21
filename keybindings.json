@@ -1,13 +1,17 @@
 // Place your key bindings in this file to override the defaults
 [
   {
-    "command": "explorer.newFile",
-    "key": "a",
-    "when": "filesExplorerFocus && !inputFocus"
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+q"
   },
   {
-    "command": "explorer.newFolder",
-    "key": "f",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+q",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "explorer.newFile",
+    "key": "a",
     "when": "filesExplorerFocus && !inputFocus"
   },
   {
