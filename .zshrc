@@ -23,8 +23,6 @@ alias b="nr build"
 
 alias update="sudo apt update && sudo apt upgrade -y"
 alias remove="rm -rf"
-alias cat="batcat"
-alias ls="eza --icons"
 
 # great wall
 host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
@@ -61,3 +59,6 @@ export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
 export FPATH="~/eza/completions/zsh:$FPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+alias cat="batcat"
+alias ls="eza --icons"
