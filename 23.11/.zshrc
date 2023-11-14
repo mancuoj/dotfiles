@@ -12,14 +12,29 @@ plugins=(
 )
 
 # alias
+alias gcl='git clone'
+alias gl='git log'
+alias glo='git log --oneline --graph'
+alias gs='git status'
 alias gi="git init"
-alias gp="git push"
+alias gc='git commit'
+alias gcm='git commit -m'
 alias gam="git add . && git commit -m"
-alias gpl="git pull"
+alias gpl='git pull --rebase'
+alias gp="git push"
+alias gpf='git push --force'
+alias grh='git reset HEAD'
+alias grh1='git reset HEAD~1'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias main='git checkout main'
+
 alias nio="ni --prefer-offline"
 alias s="nr start"
 alias d="nr dev"
 alias b="nr build"
+alias lint="nr lint"
+alias lintf="nr lint --fix"
 
 alias update="sudo apt update && sudo apt upgrade -y"
 alias remove="rm -rf"
