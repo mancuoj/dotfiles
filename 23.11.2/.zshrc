@@ -20,7 +20,9 @@ zstyle ':z4h:' term-shell-integration 'yes'
 zstyle ':z4h:autosuggestions' forward-char 'accept'
 
 # Recursively traverse directories when TAB-completing files.
-zstyle ':z4h:fzf-complete' recurse-dirs 'no'
+zstyle ':z4h:fzf-complete' recurse-dirs 'yes'
+zstyle ':z4h:fzf-complete' fzf-bindings tab:repeat
+# zstyle ':z4h:*' fzf-flags --color=hl:5,hl+:5
 
 # Enable direnv to automatically source .envrc files.
 zstyle ':z4h:direnv'         enable 'no'
@@ -32,14 +34,16 @@ zstyle ':z4h:direnv:success' notify 'yes'
 # zstyle ':z4h:ssh:example-hostname1'   enable 'yes'
 # zstyle ':z4h:ssh:*.example-hostname2' enable 'no'
 # The default value if none of the overrides above match the hostname.
-zstyle ':z4h:ssh:*'                   enable 'no'
-
+zstyle ':z4h:ssh:*'                   enable 'yes'
 # Send these files over to the remote host when connecting over SSH to the
 # enabled hosts.
 zstyle ':z4h:ssh:*' send-extra-files '~/.gitconfig'
-
 # Start ssh-agent if it's not running yet.
-zstyle ':z4h:ssh-agent:' start yes
+zstyle ':z4h:ssh-agent:' start      yes
+zstyle ':z4h:ssh-agent:' extra-args -t 20h
+
+# Mark up shell's output with semantic information.
+zstyle ':z4h:' term-shell-integration 'yes'
 
 # Install or update core components (fzf, zsh-autosuggestions, etc.) and
 # initialize Zsh. After this point console I/O is unavailable until Zsh
