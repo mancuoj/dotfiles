@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="steeef"
+ZSH_THEME="half-life"  # steef
 
 zstyle ':omz:update' mode auto
 fpath+=~/.zfunc
@@ -57,6 +57,10 @@ export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# deno
+export DENO_INSTALL="/home/mancuoj/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
@@ -64,6 +68,11 @@ source <(ng completion script)
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # fzf
 # export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:55%' --preview 'batcat --color=always --style=header,grid --line-range :300 {}'"
@@ -77,3 +86,4 @@ source $ZSH/oh-my-zsh.sh
 
 alias cat="batcat"
 alias ls="eza --icons"
+
