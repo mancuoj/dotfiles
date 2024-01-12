@@ -83,7 +83,8 @@ compdef _directories md
 [[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
 
 # Define aliases.
-alias gcl='git clone'
+alias c='gh cl'
+
 alias gl='git log'
 alias glo='git log --oneline --graph'
 alias gs='git status'
@@ -153,3 +154,10 @@ eval "$(pyenv init -)"
 
 # eza completions
 export FPATH="~/eza/completions/zsh:$FPATH"
+
+# turso
+export PATH="/home/mancuoj/.turso:$PATH"
+
+# fly.io
+export FLYCTL_INSTALL="/home/mancuoj/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
