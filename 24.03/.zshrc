@@ -110,6 +110,43 @@ function cl() {
   fi
 }
 
+function i() {
+  cd ~/i/$1
+}
+
+function forks() {
+  cd ~/forks/$1
+}
+
+function works() {
+  cd ~/works/$1
+}
+
+function cli() {
+  i && cl "$@" && code . && cd ~2
+}
+
+function clf() {
+  forks && cl "$@" && code . && cd ~2
+}
+
+function clw() {
+  works && cl "$@" && code . && cd ~2
+}
+
+function codei() {
+  i && code "$@" && cd -
+}
+
+function codef() {
+  forks && code "$@" && cd -
+}
+
+function codew() {
+  works && code "$@" && cd -
+}
+
+
 # Define named directories: ~w <=> Windows home directory on WSL.
 [[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
 
@@ -122,6 +159,7 @@ alias nio="ni --prefer-offline"
 alias s="nr start"
 alias d="nr dev"
 alias b="nr build"
+alias fmt="nr format"
 alias lint="nr lint"
 alias lintf="nr lint --fix"
 
@@ -173,3 +211,6 @@ eval "$(fnm env --use-on-cd)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# rye
+source "$HOME/.rye/env"
