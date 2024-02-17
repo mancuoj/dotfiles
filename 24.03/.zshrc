@@ -110,20 +110,20 @@ function cl() {
   fi
 }
 
-function i() {
-  cd ~/i/$1
+function p() {
+  cd ~/Projects/$1
 }
 
 function forks() {
-  cd ~/forks/$1
+  cd ~/Forks/$1
 }
 
 function works() {
-  cd ~/works/$1
+  cd ~/Works/$1
 }
 
-function cli() {
-  i && cl "$@" && code . && cd ~2
+function clp() {
+  p && cl "$@" && code . && cd ~2
 }
 
 function clf() {
@@ -134,8 +134,8 @@ function clw() {
   works && cl "$@" && code . && cd ~2
 }
 
-function codei() {
-  i && code "$@" && cd -
+function codep() {
+  p && code "$@" && cd -
 }
 
 function codef() {
