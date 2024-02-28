@@ -146,7 +146,6 @@ function codew() {
   works && code "$@" && cd -
 }
 
-
 # Define named directories: ~w <=> Windows home directory on WSL.
 [[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
 
@@ -175,7 +174,6 @@ alias gA='git add -A'
 alias gc='git commit'
 alias gcm='git commit -m'
 alias gam='git add -A && git commit -m'
-
 
 alias gb='git branch'
 alias gbd='git branch -d'
@@ -214,3 +212,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # rye
 source "$HOME/.rye/env"
+
+# go
+export GOROOT=/usr/local/go
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/gopath
+
