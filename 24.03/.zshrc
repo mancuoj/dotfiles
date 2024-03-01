@@ -89,6 +89,14 @@ z4h bindkey z4h-cd-down    Alt+Down   # cd into a child directory
 autoload -Uz zmv
 
 # Define functions and completions.
+function up() {
+  sudo apt update -qq && sudo apt upgrade -yqq
+  taze major -gi
+  bun upgrade
+  rye self update
+  cargo install $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
+}
+
 function md() {
   [[ $# == 1 ]] && mkdir -p -- "$1" && cd -- "$1"
 }
@@ -152,41 +160,48 @@ function codew() {
 # Define aliases.
 alias tree='tree -a -I .git'
 alias remove='rm -rf'
-alias update='sudo apt update && sudo apt upgrade -y'
 
-alias nio="ni --prefer-offline"
-alias s="nr start"
-alias d="nr dev"
-alias b="nr build"
-alias fmt="nr format"
-alias lint="nr lint"
-alias lintf="nr lint --fix"
+alias nio='ni --prefer-offline'
+alias s='nr start'
+alias d='nr dev'
+alias b='nr build'
+alias fmt='nr format'
+alias lint='nr lint'
+alias lintf='nr lint --fix'
 
-alias gl='git log'
-alias glo='git log --oneline --graph'
+alias cr='gh repo create'
+alias crpr='gh pr create'
+alias fork='gh repo fork'
+
 alias gs='git status'
+alias gl='git log'
+alias glo='gl --oneline --graph'
 alias gp='git push'
-alias gpf='git push --force'
+alias gpf='gp --force'
 alias gpl='git pull --rebase'
 
 alias ga='git add'
-alias gA='git add -A'
+alias gA='ga -A'
 alias gc='git commit'
-alias gcm='git commit -m'
-alias gam='git add -A && git commit -m'
+alias gcm='gc -m'
+alias gam='gA && gcm'
+
+alias gi='git init'
+alias gii='gi && gam "chore: init"'
 
 alias gb='git branch'
-alias gbd='git branch -d'
+alias gbd='gb -d'
 alias gco='git checkout'
-alias gcob='git checkout -b'
-alias main='git checkout main'
-alias dev='git checkout dev'
+alias gcob='gco -b'
+alias main='gco main'
+alias dev='gco dev'
 
-alias grh='git reset HEAD'
-alias grh1='git reset HEAD~1'
+alias gsw='git switch'
+alias gswc='gsw -c'
 
-# Add flags to existing aliases.
-# alias ls="${aliases[ls]:-ls} -A"
+alias gr='git reset'
+alias grh='gr HEAD'
+alias grh1='gr HEAD~1'
 
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
@@ -218,3 +233,6 @@ export GOROOT=/usr/local/go
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/gopath
 
+# fly.io
+export FLYCTL_INSTALL="/home/mancuoj/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
