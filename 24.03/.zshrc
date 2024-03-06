@@ -90,10 +90,19 @@ autoload -Uz zmv
 
 # Define functions and completions.
 function up() {
+  echo -e "\033[0;34m---------- Updating system packages ------------------------\033[0m"
   sudo apt update -qq && sudo apt upgrade -yqq
-  taze major -gi
+
+  echo -e "\033[0;34m---------- Updating npm global packages --------------------\033[0m"
+  taze major -gis
+
+  echo -e "\033[0;34m---------- Upgrading bun -----------------------------------\033[0m"
   bun upgrade
+
+  echo -e "\033[0;34m---------- Updating rye ------------------------------------\033[0m"
   rye self update
+
+  echo -e "\033[0;34m---------- Updating Rust packages --------------------------\033[0m"
   cargo install $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
 }
 
@@ -160,6 +169,7 @@ function codew() {
 # Define aliases.
 alias tree='tree -a -I .git'
 alias remove='rm -rf'
+alias clean='remove node_modules && ni'
 
 alias nio='ni --prefer-offline'
 alias s='nr start'
