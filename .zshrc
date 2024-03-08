@@ -8,7 +8,7 @@
 # You can manually run `z4h update` to update everything.
 zstyle ':z4h:' auto-update      'ask'
 # Ask whether to auto-update this often; has no effect if auto-update is 'no'.
-zstyle ':z4h:' auto-update-days '30'
+zstyle ':z4h:' auto-update-days '20'
 
 # Keyboard type: 'mac' or 'pc'.
 zstyle ':z4h:bindkey' keyboard  'pc'
@@ -89,50 +89,131 @@ z4h bindkey z4h-cd-down    Alt+Down   # cd into a child directory
 autoload -Uz zmv
 
 # Define functions and completions.
-function md() { [[ $# == 1 ]] && mkdir -p -- "$1" && cd -- "$1" }
+function up() {
+  echo -e "\033[0;34m---------- Updating system packages ------------------------\033[0m"
+  sudo apt update -qq && sudo apt upgrade -yqq
+
+  echo -e "\033[0;34m---------- Updating npm global packages --------------------\033[0m"
+  taze major -gis
+
+  echo -e "\033[0;34m---------- Upgrading bun -----------------------------------\033[0m"
+  bun upgrade
+
+  echo -e "\033[0;34m---------- Updating rye ------------------------------------\033[0m"
+  rye self update
+
+  echo -e "\033[0;34m---------- Updating Rust packages --------------------------\033[0m"
+  cargo install $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
+}
+
+function md() {
+  [[ $# == 1 ]] && mkdir -p -- "$1" && cd -- "$1"
+}
 compdef _directories md
-function p() { cd ~/Projects/$1 }
-function f() { cd ~/Forks/$1 }
+
+function pr() {
+  if [ $1 = "ls" ]; then
+    gh pr list
+  else
+    gh pr checkout $1
+  fi
+}
+
+function cl() {
+  if [[ -z $2 ]] then
+    gh repo clone "$@" && cd "$(basename "$1" .git)"
+  else
+    gh repo clone "$@" && cd "$2"
+  fi
+}
+
+function p() {
+  cd ~/Projects/$1
+}
+
+function forks() {
+  cd ~/Forks/$1
+}
+
+function works() {
+  cd ~/Works/$1
+}
+
+function clp() {
+  p && cl "$@" && code . && cd ~2
+}
+
+function clf() {
+  forks && cl "$@" && code . && cd ~2
+}
+
+function clw() {
+  works && cl "$@" && code . && cd ~2
+}
+
+function codep() {
+  p && code "$@" && cd -
+}
+
+function codef() {
+  forks && code "$@" && cd -
+}
+
+function codew() {
+  works && code "$@" && cd -
+}
 
 # Define named directories: ~w <=> Windows home directory on WSL.
 [[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
 
 # Define aliases.
-alias remove='rm -rf'
 alias tree='tree -a -I .git'
-alias cl='gh repo clone'
-alias open="gh repo view --web"
+alias remove='rm -rf'
+alias clean='remove node_modules && ni'
 
-alias nio="ni --prefer-offline"
-alias s="nr start"
-alias d="nr dev"
-alias b="nr build"
-alias lint="nr lint"
-alias lintf="nr lint --fix"
+alias nio='ni --prefer-offline'
+alias s='nr start'
+alias d='nr dev'
+alias b='nr build'
+alias t='nr test'
+alias fmt='nr format'
+alias lint='nr lint'
+alias lintf='nr lint --fix'
+alias release='nr release'
 
-alias gl='git log'
-alias glo='git log --oneline --graph'
+alias cr='gh repo create'
+alias crpr='gh pr create'
+alias fork='gh repo fork'
+
 alias gs='git status'
+alias gl='git log'
+alias glo='gl --oneline --graph'
 alias gp='git push'
-alias gpf='git push --force'
+alias gpf='gp --force'
 alias gpl='git pull --rebase'
-alias gcl='git clone'
-alias ga='git add'
-alias gA='git add -A'
-alias gm='git commit'
-alias gcm='git commit -m'
-alias gam='git add -A && git commit -m'
-alias gfrb='git fetch origin && git rebase origin/master'
-alias main='git checkout main'
-alias gco='git checkout'
-alias gcob='git checkout -b'
-alias gb='git branch'
-alias gbd='git branch -d'
-alias grh='git reset HEAD'
-alias grh1='git reset HEAD~1'
 
-# Add flags to existing aliases.
-# alias ls="${aliases[ls]:-ls} -A"
+alias ga='git add'
+alias gA='ga -A'
+alias gc='git commit'
+alias gcm='gc -m'
+alias gam='gA && gcm'
+
+alias gi='git init'
+alias gii='gi && gam "chore: init"'
+
+alias gb='git branch'
+alias gbd='gb -d'
+alias gco='git checkout'
+alias gcob='gco -b'
+alias main='gco main'
+alias dev='gco dev'
+
+alias gsw='git switch'
+alias gswc='gsw -c'
+
+alias gr='git reset'
+alias grh='gr HEAD'
+alias grh1='gr HEAD~1'
 
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
@@ -145,11 +226,12 @@ export http_proxy=http://$host_ip:7890
 export https_proxy=http://$host_ip:7890
 
 # fnm
-export PATH="/home/h/.local/share/fnm:$PATH"
+export PATH="/home/mancuoj/.local/share/fnm:$PATH"
+eval "`fnm env`"
 eval "$(fnm env --use-on-cd)"
 
 # bun completions
-[ -s "/home/h/.bun/_bun" ] && source "/home/h/.bun/_bun"
+[ -s "/home/mancuoj/.bun/_bun" ] && source "/home/mancuoj/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -157,3 +239,12 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # rye
 source "$HOME/.rye/env"
+
+# go
+export GOROOT=/usr/local/go
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/gopath
+
+# fly.io
+export FLYCTL_INSTALL="/home/mancuoj/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"

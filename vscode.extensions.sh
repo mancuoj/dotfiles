@@ -1,22 +1,20 @@
-code --list-extensions | xargs -L 1 echo code --install-extension
+# code --list-extensions | xargs -L 1 echo code --install-extension
 code --install-extension Extensions installed on WSL: Ubuntu-22.04:
 code --install-extension angular.ng-template
 code --install-extension antfu.iconify
 code --install-extension antfu.open-in-github-button
 code --install-extension antfu.theme-vitesse
 code --install-extension bradlc.vscode-tailwindcss
-code --install-extension charliermarsh.ruff
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension ddiu8081.moegi-theme
 code --install-extension esbenp.prettier-vscode
 code --install-extension fabiospampinato.vscode-open-in-github
+code --install-extension github.copilot
+code --install-extension github.copilot-chat
 code --install-extension hyoban.tailwindcss-classname-highlight
 code --install-extension isudox.vscode-jetbrains-keybindings
 code --install-extension miguelsolorio.symbols
 code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-python.debugpy
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
 code --install-extension piyushsarkar.sort-css-properties
 code --install-extension quick-lint.quick-lint-js
 code --install-extension raillyhugo.one-hunter
@@ -26,5 +24,6 @@ code --install-extension trapfether.tailwind-raw-reorder
 code --install-extension usernamehw.errorlens
 code --install-extension vue.volar
 code --install-extension wakatime.vscode-wakatime
+code --install-extension yandeu.five-server
 code --install-extension yoavbls.pretty-ts-errors
 code --install-extension yzhang.markdown-all-in-one

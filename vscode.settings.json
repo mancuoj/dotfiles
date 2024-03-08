@@ -102,13 +102,27 @@
   "editor.suggest.insertMode": "replace",
 
   "editor.guides.indentation": true,
-  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairs": false,
 
   "editor.quickSuggestions": {
     "strings": "on"
   },
   "editor.linkedEditing": true,
   "editor.dragAndDrop": false,
+
+  "editor.tokenColorCustomizations": {
+    "[Moegi Dark][Moegi Black][Moegi Light]": {
+      "textMateRules": [
+        {
+          "name": "Comment Italics",
+          "scope": ["comment", "punctuation.definition.comment"],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    }
+  },
 
   // Terminal
   "terminal.integrated.fontFamily": "'Mononoki Nerd Font', 'Maple UI'",
@@ -147,5 +161,6 @@
   "workbench.preferredDarkColorTheme": "Moegi Black",
   "workbench.iconTheme": "symbols",
   "window.zoomLevel": 1.1,
-  "workbench.colorTheme": "Moegi Black"
+  "workbench.colorTheme": "Moegi Space",
+  "extensions.ignoreRecommendations": true
 }
