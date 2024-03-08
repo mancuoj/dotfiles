@@ -1,0 +1,59 @@
+{
+  // Python
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  // Inlay Hints
+  "editor.inlayHints.fontSize": 10,
+  "editor.inlayHints.padding": true,
+  "python.analysis.inlayHints.callArgumentNames": "partial",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  // Extensions
+  "errorLens.excludeBySource": [
+    "cSpell"
+  ],
+  // Editor
+  "editor.fontFamily": "'Monaspace Argon', '霞鹜文楷等宽 GB'",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+  "editor.tabSize": 2,
+  "editor.fontSize": 18,
+  "editor.fontWeight": "600",
+  "editor.lineHeight": 1.65,
+  "editor.lineNumbers": "interval",
+  "editor.mouseWheelZoom": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.dragAndDrop": false,
+  "editor.stickyScroll.enabled": true,
+  // Terminal
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.4,
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.smoothScrolling": true,
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.compactFolders": false,
+  // Workbench
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "security.workspace.trust.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.list.smoothScrolling": true,
+  "workbench.colorTheme": "Default Light Modern"
+}

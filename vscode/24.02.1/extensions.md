@@ -1,0 +1,5 @@
+- WSL
+- JetBrains IDE Keymap
+- Error Lens
+- Code Spell Checker
+- Markdown All in One

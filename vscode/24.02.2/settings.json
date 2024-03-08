@@ -1,0 +1,151 @@
+{
+  // Inlay Hints
+  "editor.inlayHints.enabled": "on",
+  "editor.inlayHints.fontSize": 10,
+  "editor.inlayHints.padding": true,
+  // JavaScript
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "literals",
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  // TypeScript
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+  // Python
+  "python.analysis.inlayHints.callArgumentNames": "partial",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+
+  // Extensions
+  "errorLens.excludeBySource": ["cSpell"],
+  "symbols.hidesExplorerArrows": false,
+  "css.lint.unknownAtRules": "ignore",
+  "sortcss.sortOnSave": true,
+  "sortcss.sortingStrategy": "smacss",
+  "tailwind-raw-reorder.runOnSave": true,
+  "tailwind-raw-reorder.IgnoreConfigNotFound": true,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
+  "cSpell.userWords": [
+    "antfu",
+    "btn",
+    "clsx",
+    "daisyui",
+    "mancuoj",
+    "tailwindcss",
+    "todos"
+  ],
+
+  // Formatters
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "all",
+  "[json][jsonc][html][css][markdown][javascript][javascriptreact][typescript][typescriptreact][vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+
+  // Others
+  "git.confirmSync": false,
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.readonlyFromPermissions": true,
+  "files.readonlyInclude": {
+    "**/node_modules/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/yarn.lock": true
+  },
+  "search.exclude": {
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/yarn.lock": true
+  },
+
+  // Editor
+  "editor.fontFamily": "'MonoLisa', 'Nova Nerd Font', 'Monaspace Argon', '霞鹜文楷'",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+  "editor.tabSize": 2,
+  "editor.fontSize": 18,
+  "editor.fontWeight": "700",
+  "editor.lineHeight": 1.7,
+  "editor.lineNumbers": "interval",
+  "editor.mouseWheelZoom": true,
+  "editor.suggestSelection": "first",
+  "editor.suggest.insertMode": "replace",
+
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": true,
+
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.linkedEditing": true,
+  "editor.dragAndDrop": false,
+
+  // Terminal
+  "terminal.integrated.fontFamily": "'Mononoki Nerd Font', 'Maple UI'",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.35,
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.allowChords": false,
+
+  // Smooth
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.compactFolders": false,
+
+  // Workbench
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "security.workspace.trust.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.productIconTheme": "icons-carbon",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.preferredDarkColorTheme": "Moegi Black",
+  "workbench.iconTheme": "symbols",
+  "window.zoomLevel": 1.1,
+  "workbench.colorTheme": "Moegi Black"
+}
