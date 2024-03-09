@@ -1,7 +1,4 @@
-# Personal Zsh configuration file. It is strongly recommended to keep all
-# shell customization and configuration (including exported environment
-# variables such as PATH) in this file or in files sourced from it.
-#
+##################################################################################################
 # Documentation: https://github.com/romkatv/zsh4humans/blob/v5/README.md.
 
 # Periodic auto-update on Zsh startup: 'ask' or 'no'.
@@ -88,7 +85,17 @@ z4h bindkey z4h-cd-down    Alt+Down   # cd into a child directory
 # Autoload functions.
 autoload -Uz zmv
 
-# Define functions and completions.
+# Define named directories: ~w <=> Windows home directory on WSL.
+[[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
+
+
+# Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
+setopt glob_dots     # no special treatment for file names with a leading dot
+setopt no_auto_menu  # require an extra TAB press to open the completion menu
+##################################################################################################
+
+
+
 function up() {
   echo -e "\033[0;34m---------- Updating system packages ------------------------\033[0m"
   sudo apt update -qq && sudo apt upgrade -yqq
@@ -163,10 +170,7 @@ function codew() {
   works && code "$@" && cd -
 }
 
-# Define named directories: ~w <=> Windows home directory on WSL.
-[[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
-
-# Define aliases.
+alias ls='lsd'
 alias tree='tree -a -I .git'
 alias remove='rm -rf'
 alias clean='remove node_modules && ni'
@@ -214,10 +218,6 @@ alias gswc='gsw -c'
 alias gr='git reset'
 alias grh='gr HEAD'
 alias grh1='gr HEAD~1'
-
-# Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
-setopt glob_dots     # no special treatment for file names with a leading dot
-setopt no_auto_menu  # require an extra TAB press to open the completion menu
 
 # Great Wall
 host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
