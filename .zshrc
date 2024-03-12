@@ -253,3 +253,5 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export DENO_INSTALL="/home/mancuoj/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+# autin
+eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
