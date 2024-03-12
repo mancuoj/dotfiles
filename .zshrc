@@ -34,11 +34,9 @@ zstyle ':z4h:ssh:example-hostname1'   enable 'no'
 zstyle ':z4h:ssh:*.example-hostname2' enable 'no'
 # The default value if none of the overrides above match the hostname.
 zstyle ':z4h:ssh:*'                   enable 'no'
-
 # Send these files over to the remote host when connecting over SSH to the
 # enabled hosts.
 zstyle ':z4h:ssh:*' send-extra-files '~/.nanorc' '~/.env.zsh'
-
 # Start ssh-agent if it's not running yet.
 zstyle ':z4h:ssh-agent:' start yes
 
@@ -67,8 +65,8 @@ z4h source ~/.env.zsh
 # Use additional Git repositories pulled in with `z4h install`.
 #
 # This is just an example that you should delete. It does nothing useful.
-z4h source ohmyzsh/ohmyzsh/lib/diagnostics.zsh  # source an individual file
-z4h load   ohmyzsh/ohmyzsh/plugins/emoji-clock  # load a plugin
+# z4h source ohmyzsh/ohmyzsh/lib/diagnostics.zsh  # source an individual file
+# z4h load   ohmyzsh/ohmyzsh/plugins/emoji-clock  # load a plugin
 
 # Define key bindings.
 z4h bindkey z4h-backward-kill-word  Ctrl+Backspace     Ctrl+H
@@ -106,11 +104,14 @@ function up() {
   echo -e "\033[0;34m---------- Upgrading bun -----------------------------------\033[0m"
   bun upgrade
 
+  echo -e "\033[0;34m---------- Upgrading deno ----------------------------------\033[0m"
+  deno upgrade
+
   echo -e "\033[0;34m---------- Updating rye ------------------------------------\033[0m"
   rye self update
 
   echo -e "\033[0;34m---------- Updating Rust packages --------------------------\033[0m"
-  cargo install $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
+  cargo install -q $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
 }
 
 function md() {
@@ -174,6 +175,7 @@ alias ls='lsd'
 alias tree='tree -a -I .git'
 alias remove='rm -rf'
 alias clean='remove node_modules && ni'
+alias weather='curl -s wttr.in/shanghai | head -n 7 | tail -n 5'
 
 alias nio='ni --prefer-offline'
 alias s='nr start'
@@ -230,10 +232,8 @@ export PATH="/home/mancuoj/.local/share/fnm:$PATH"
 eval "`fnm env`"
 eval "$(fnm env --use-on-cd)"
 
-# bun completions
-[ -s "/home/mancuoj/.bun/_bun" ] && source "/home/mancuoj/.bun/_bun"
-
 # bun
+[ -s "/home/mancuoj/.bun/_bun" ] && source "/home/mancuoj/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
@@ -248,3 +248,8 @@ export GOPATH=$HOME/gopath
 # fly.io
 export FLYCTL_INSTALL="/home/mancuoj/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+# deno
+export DENO_INSTALL="/home/mancuoj/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+

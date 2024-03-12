@@ -1,33 +1,7 @@
 {
-  // Inlay Hints
-  "editor.inlayHints.enabled": "on",
-  "editor.inlayHints.fontSize": 10,
-  "editor.inlayHints.padding": true,
-  // JavaScript
-  "javascript.inlayHints.enumMemberValues.enabled": true,
-  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "javascript.inlayHints.parameterNames.enabled": "literals",
-  "javascript.inlayHints.parameterTypes.enabled": true,
-  "javascript.inlayHints.variableTypes.enabled": true,
-  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
-  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
-  // TypeScript
-  "typescript.inlayHints.enumMemberValues.enabled": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "typescript.inlayHints.parameterNames.enabled": "literals",
-  "typescript.inlayHints.parameterTypes.enabled": true,
-  "typescript.inlayHints.variableTypes.enabled": true,
-  "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
-  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
-  "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
-  // Python
-  "python.analysis.inlayHints.callArgumentNames": "partial",
-  "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.inlayHints.pytestParameters": true,
-  "python.analysis.inlayHints.variableTypes": true,
-
   // Extensions
+  "extensions.ignoreRecommendations": true,
+  "typeChallenges.workspaceFolder": "/home/mancuoj/Projects/type-challenges",
   "errorLens.excludeBySource": ["cSpell"],
   "symbols.hidesExplorerArrows": false,
   "css.lint.unknownAtRules": "ignore",
@@ -42,38 +16,50 @@
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
 
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.useWsl": true,
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.workspaceFolder": "/home/mancuoj/Projects/leetcode",
+  "leetcode.showDescription": "In File Comment",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.hint.setDefaultLanguage": false,
+
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": true
+  },
+
   "cSpell.userWords": [
     "antfu",
     "btn",
     "clsx",
     "daisyui",
+    "leetcode",
     "mancuoj",
+    "nums",
     "tailwindcss",
-    "todos"
+    "todos",
+    "tsup"
   ],
 
   // Formatters
   "editor.formatOnSave": true,
   "prettier.semi": false,
+  "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "[json][jsonc][html][css][markdown][javascript][javascriptreact][typescript][typescriptreact][vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[python]": {
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    },
-    "editor.defaultFormatter": "charliermarsh.ruff"
-  },
 
   // Others
-  "git.confirmSync": false,
-
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
+  "git.confirmSync": false,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.readonlyFromPermissions": true,
@@ -100,28 +86,23 @@
   "editor.mouseWheelZoom": true,
   "editor.suggestSelection": "first",
   "editor.suggest.insertMode": "replace",
-
   "editor.guides.indentation": true,
   "editor.guides.bracketPairs": false,
-
+  "editor.linkedEditing": true,
+  "editor.dragAndDrop": false,
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "editor.linkedEditing": true,
-  "editor.dragAndDrop": false,
-
   "editor.tokenColorCustomizations": {
-    "[Moegi Dark][Moegi Black][Moegi Light]": {
-      "textMateRules": [
-        {
-          "name": "Comment Italics",
-          "scope": ["comment", "punctuation.definition.comment"],
-          "settings": {
-            "fontStyle": "italic"
-          }
+    "textMateRules": [
+      {
+        "name": "Comment Italics",
+        "scope": ["comment", "punctuation.definition.comment"],
+        "settings": {
+          "fontStyle": "italic"
         }
-      ]
-    }
+      }
+    ]
   },
 
   // Terminal
@@ -145,6 +126,7 @@
   "explorer.compactFolders": false,
 
   // Workbench
+  "window.zoomLevel": 1,
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
   "security.workspace.trust.enabled": false,
@@ -160,7 +142,5 @@
   "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.preferredDarkColorTheme": "Moegi Black",
   "workbench.iconTheme": "symbols",
-  "window.zoomLevel": 1.1,
-  "workbench.colorTheme": "Moegi Space",
-  "extensions.ignoreRecommendations": true
+  "workbench.colorTheme": "Moegi Black"
 }
