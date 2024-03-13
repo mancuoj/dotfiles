@@ -112,6 +112,8 @@ function up() {
 
   echo -e "\033[0;34m---------- Updating Rust packages --------------------------\033[0m"
   cargo install -q $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
+
+  echo -e "\033[0;32mEverything is shiny now!\033[0m"
 }
 
 function md() {
