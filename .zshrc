@@ -174,6 +174,7 @@ function codew() {
 }
 
 alias ls='lsd'
+alias cd='z'
 alias tree='tree -a -I .git'
 alias remove='rm -rf'
 alias clean='remove node_modules && ni'
@@ -257,3 +258,6 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 # autin
 eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
+
+# zoxide
+eval "$(zoxide init zsh)"

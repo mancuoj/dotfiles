@@ -1,5 +1,5 @@
-$env:http_proxy="http://127.0.0.1:7890";
-$env:https_proxy="http://127.0.0.1:7890";
+$env:http_proxy="http://127.0.0.1:7890"
+$env:https_proxy="http://127.0.0.1:7890"
 
 Import-Module PSReadLine
 Set-PSReadLineKeyHandler -Key Ctrl+u -Function BackwardDeleteLine

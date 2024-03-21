@@ -17,10 +17,10 @@
   ],
 
   "leetcode.endpoint": "leetcode-cn",
-  "leetcode.useWsl": true,
   "leetcode.defaultLanguage": "javascript",
-  "leetcode.workspaceFolder": "/home/mancuoj/Projects/leetcode",
   "leetcode.showDescription": "In File Comment",
+  "leetcode.useWsl": true,
+  "leetcode.workspaceFolder": "/home/mancuoj/Projects/leetcode",
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.hint.commentDescription": false,
   "leetcode.hint.commandShortcut": false,
@@ -36,14 +36,18 @@
   "cSpell.userWords": [
     "antfu",
     "btn",
+    "bumpp",
     "clsx",
-    "daisyui",
+    "codecov",
+    "corepack",
+    "dotfiles",
     "leetcode",
     "mancuoj",
     "nums",
     "tailwindcss",
-    "todos",
-    "tsup"
+    "Testcase",
+    "typecheck",
+    "vitepress"
   ],
 
   // Formatters
@@ -76,17 +80,17 @@
   },
 
   // Editor
-  "editor.fontFamily": "'MonoLisa', 'Nova Nerd Font', 'Monaspace Argon', '霞鹜文楷'",
+  "editor.fontFamily": "'Nova Nerd Font', 'Input Mono', 'MonoLisa', 'Monaspace Xenon', '霞鹜文楷'",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.tabSize": 2,
   "editor.fontSize": 18,
   "editor.fontWeight": "700",
-  "editor.lineHeight": 1.7,
+  "editor.lineHeight": 1.9,
   "editor.lineNumbers": "interval",
   "editor.mouseWheelZoom": true,
   "editor.suggestSelection": "first",
   "editor.suggest.insertMode": "replace",
-  "editor.guides.indentation": true,
+  "editor.guides.indentation": false,
   "editor.guides.bracketPairs": false,
   "editor.linkedEditing": true,
   "editor.dragAndDrop": false,
@@ -142,5 +146,5 @@
   "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.preferredDarkColorTheme": "Moegi Black",
   "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Moegi Black"
+  "workbench.colorTheme": "Moegi Space"
 }
