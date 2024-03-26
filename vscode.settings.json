@@ -1,7 +1,7 @@
 {
   // Extensions
   "extensions.ignoreRecommendations": true,
-  "typeChallenges.workspaceFolder": "/home/mancuoj/Projects/type-challenges",
+  "typeChallenges.workspaceFolder": "/home/mancuoj/Works/type-challenges",
   "errorLens.excludeBySource": ["cSpell"],
   "symbols.hidesExplorerArrows": false,
   "css.lint.unknownAtRules": "ignore",
@@ -20,7 +20,7 @@
   "leetcode.defaultLanguage": "javascript",
   "leetcode.showDescription": "In File Comment",
   "leetcode.useWsl": true,
-  "leetcode.workspaceFolder": "/home/mancuoj/Projects/leetcode",
+  "leetcode.workspaceFolder": "/home/mancuoj/Works/leetcode",
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.hint.commentDescription": false,
   "leetcode.hint.commandShortcut": false,
@@ -146,5 +146,5 @@
   "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.preferredDarkColorTheme": "Moegi Black",
   "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Moegi Space"
+  "workbench.colorTheme": "Moegi Black"
 }
