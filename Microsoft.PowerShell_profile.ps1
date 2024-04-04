@@ -8,7 +8,7 @@ Remove-Item Alias:ls -Force -ErrorAction Ignore
 Remove-Item Alias:ni -Force -ErrorAction Ignore
 
 Set-Alias -Name ls -Value lsd
-Set-Alias -Name remove -Value trash
+Set-Alias -Name remove -Value rimraf
 
 fnm env --use-on-cd | Out-String | Invoke-Expression
 

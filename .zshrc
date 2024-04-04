@@ -161,9 +161,6 @@ alias gcob='gco -b'
 alias main='gco main'
 alias dev='gco dev'
 
-alias gsw='git switch'
-alias gswc='gsw -c'
-
 alias gr='git reset'
 alias grh='gr HEAD'
 alias grh1='gr HEAD~1'

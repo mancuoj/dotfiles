@@ -51,7 +51,7 @@
         "size": 14.0
       },
       "intenseTextStyle": "all",
-      "opacity": 60,
+      "opacity": 70,
       "padding": "32",
       "scrollbarState": "hidden",
       "suppressApplicationTitle": true,

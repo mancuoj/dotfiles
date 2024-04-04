@@ -18,7 +18,7 @@
 
   "leetcode.endpoint": "leetcode-cn",
   "leetcode.defaultLanguage": "javascript",
-  "leetcode.showDescription": "In File Comment",
+  "leetcode.showDescription": "In Webview",
   "leetcode.useWsl": true,
   "leetcode.workspaceFolder": "/home/mancuoj/Works/leetcode",
   "leetcode.hint.configWebviewMarkdown": false,
@@ -26,6 +26,7 @@
   "leetcode.hint.commandShortcut": false,
   "leetcode.hint.setDefaultLanguage": false,
 
+  "codeium.enableCodeLens": false,
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
@@ -37,12 +38,14 @@
     "antfu",
     "btn",
     "bumpp",
+    "bunchee",
     "clsx",
     "codecov",
     "corepack",
     "dotfiles",
     "leetcode",
     "mancuoj",
+    "nextui",
     "nums",
     "tailwindcss",
     "Testcase",
@@ -54,6 +57,7 @@
   "editor.formatOnSave": true,
   "prettier.semi": false,
   "prettier.singleQuote": true,
+  "prettier.printWidth": 120,
   "prettier.trailingComma": "all",
   "[json][jsonc][html][css][markdown][javascript][javascriptreact][typescript][typescriptreact][vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -77,6 +81,10 @@
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
     "**/yarn.lock": true
+  },
+
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
   },
 
   // Editor
@@ -111,7 +119,6 @@
 
   // Terminal
   "terminal.integrated.fontFamily": "'Mononoki Nerd Font', 'Maple UI'",
-  "terminal.integrated.fontSize": 15,
   "terminal.integrated.lineHeight": 1.35,
   "terminal.integrated.mouseWheelZoom": true,
   "terminal.integrated.allowChords": false,
@@ -146,5 +153,5 @@
   "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.preferredDarkColorTheme": "Moegi Black",
   "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Moegi Black"
+  "workbench.colorTheme": "Moegi Space"
 }

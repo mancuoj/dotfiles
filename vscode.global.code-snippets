@@ -10,16 +10,82 @@
 		"scope": "javascript,javascriptreact,typescript,typescriptreact",
 		"prefix": "ex",
 		"body": [
-			"export function $1"
+			"export function $1($2) {",
+			"  $3",
+			"}"
 		]
 	},
 	"export default": {
 		"scope": "javascript,javascriptreact,typescript,typescriptreact",
 		"prefix": "exd",
 		"body": [
-			"export default function $1 {",
+			"export default function $1($2) {",
+			"  $3",
 			"}"
 		]
+	},
+	"export async": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "exa",
+		"body": [
+			"export async function $1($2) {",
+			"  $3",
+			"}"
+		]
+	},
+	"remix loader": {
+		"scope": "typescriptreact",
+		"prefix": [
+			"lo",
+			"loa"
+		],
+		"body": [
+			"export async function loader({ params }: LoaderFunctionArgs) {",
+			"  $1",
+			"}"
+		]
+	},
+	"remix action": {
+		"scope": "typescriptreact",
+		"prefix": [
+			"ac",
+			"act"
+		],
+		"body": [
+			"export async function action({ params }: ActionFunctionArgs) {",
+			"  $1",
+			"}"
+		]
+	},
+	"loader data": {
+		"scope": "typescriptreact",
+		"prefix": [
+			"useloaderdata",
+			"usel"
+		],
+		"body": [
+			"const { $1 } = useLoaderData<typeof loader>()"
+		],
+	},
+	"navigate": {
+		"scope": "typescriptreact",
+		"prefix": [
+			"usenavigate",
+			"usen"
+		],
+		"body": [
+			"const navigate = useNavigate()"
+		],
+	},
+	"navigation": {
+		"scope": "typescriptreact",
+		"prefix": [
+			"usenavigation",
+			"usen"
+		],
+		"body": [
+			"const navigation = useNavigation()"
+		],
 	},
 	"tailwind center": {
 		"scope": "javascript,javascriptreact,typescript,typescriptreact",
