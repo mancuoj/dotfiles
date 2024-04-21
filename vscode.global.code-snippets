@@ -1,4 +1,5 @@
 {
+	// JS TS
 	"import": {
 		"scope": "javascript,javascriptreact,typescript,typescriptreact",
 		"prefix": "im",
@@ -16,7 +17,7 @@
 		]
 	},
 	"export default": {
-		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"scope": "javascript,typescript",
 		"prefix": "exd",
 		"body": [
 			"export default function $1($2) {",
@@ -33,6 +34,32 @@
 			"}"
 		]
 	},
+	// REACT
+	"export default component": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "exd",
+		"body": [
+			"export default function ${TM_FILENAME_BASE/[^a-zA-Z0-9]*([a-zA-Z0-9])([a-zA-Z0-9]*)/${1:/capitalize}${2}/g}() {",
+			" return (",
+			"  <div>",
+			"    <h1>Unknown Route</h1>",
+			"  </div>",
+			" )",
+			"}",
+		]
+	},
+	"react useState": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": [
+			"us",
+			"use",
+			"usestate"
+		],
+		"body": [
+			"const [$1, set${1/(.)/${1:/upcase}/}] = useState($2)",
+		]
+	},
+	// REMIX
 	"remix loader": {
 		"scope": "typescriptreact",
 		"prefix": [
@@ -57,7 +84,7 @@
 			"}"
 		]
 	},
-	"loader data": {
+	"remix loader data": {
 		"scope": "typescriptreact",
 		"prefix": [
 			"useloaderdata",
@@ -67,7 +94,7 @@
 			"const { $1 } = useLoaderData<typeof loader>()"
 		],
 	},
-	"navigate": {
+	"remix navigate": {
 		"scope": "typescriptreact",
 		"prefix": [
 			"usenavigate",
@@ -77,7 +104,7 @@
 			"const navigate = useNavigate()"
 		],
 	},
-	"navigation": {
+	"remix navigation": {
 		"scope": "typescriptreact",
 		"prefix": [
 			"usenavigation",
@@ -87,6 +114,35 @@
 			"const navigation = useNavigation()"
 		],
 	},
+	"remix submit": {
+		"scope": "typescriptreact",
+		"prefix": [
+			"usesubmit",
+			"uses"
+		],
+		"body": [
+			"const submit = useSubmit()"
+		],
+	},
+	"remix meta": {
+		"scope": "typescriptreact",
+		"prefix": [
+			"meta",
+		],
+		"body": [
+			"export const meta: MetaFunction = () => [{ title: 'Remix' }]"
+		],
+	},
+	"remix links": {
+		"scope": "typescriptreact",
+		"prefix": [
+			"links",
+		],
+		"body": [
+			"export const links: LinksFunction = () => [{ rel: 'stylesheet', href: stylesheet }]"
+		],
+	},
+	// CSS
 	"tailwind center": {
 		"scope": "javascript,javascriptreact,typescript,typescriptreact",
 		"prefix": "fc",

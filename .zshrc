@@ -202,3 +202,6 @@ eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
 
 # zoxide
 eval "$(zoxide init zsh)"
+
+# Turso
+export PATH="/home/mancuoj/.turso:$PATH"

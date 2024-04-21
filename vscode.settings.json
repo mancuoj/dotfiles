@@ -1,9 +1,37 @@
 {
   // Extensions
   "extensions.ignoreRecommendations": true,
-  "typeChallenges.workspaceFolder": "/home/mancuoj/Works/type-challenges",
-  "errorLens.excludeBySource": ["cSpell"],
   "symbols.hidesExplorerArrows": false,
+  "typeChallenges.workspaceFolder": "/home/mancuoj/Works/type-challenges",
+
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": false,
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "eslint"],
+
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.quiet": true,
+
+  "cSpell.allowCompoundWords": true,
+  "cSpell.language": "en,en-US",
+  "cSpell.userWords": [
+    "antfu",
+    "btn",
+    "clsx",
+    "dotfiles",
+    "iconify",
+    "leetcode",
+    "lucide",
+    "mancuoj",
+    "nextui",
+    "nums",
+    "tailwindcss",
+    "typecheck",
+    "vitepress"
+  ],
+
   "css.lint.unknownAtRules": "ignore",
   "sortcss.sortOnSave": true,
   "sortcss.sortingStrategy": "smacss",
@@ -34,25 +62,6 @@
     "scminput": true
   },
 
-  "cSpell.userWords": [
-    "antfu",
-    "btn",
-    "bumpp",
-    "bunchee",
-    "clsx",
-    "codecov",
-    "corepack",
-    "dotfiles",
-    "leetcode",
-    "mancuoj",
-    "nextui",
-    "nums",
-    "tailwindcss",
-    "Testcase",
-    "typecheck",
-    "vitepress"
-  ],
-
   // Formatters
   "editor.formatOnSave": true,
   "prettier.semi": false,
@@ -63,11 +72,66 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
   // Others
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
   "git.confirmSync": false,
+  "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
+  "githubPullRequests.fileListLayout": "tree",
+
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "history": false,
+      "remote": false
+    },
+    "editorGroup": {
+      "blame": true,
+      "compare": false
+    },
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scm": {
+      "authors": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "stash": true
+    }
+  },
+
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.readonlyFromPermissions": true,
@@ -93,7 +157,7 @@
   "editor.tabSize": 2,
   "editor.fontSize": 18,
   "editor.fontWeight": "700",
-  "editor.lineHeight": 1.9,
+  "editor.lineHeight": 1.8,
   "editor.lineNumbers": "interval",
   "editor.mouseWheelZoom": true,
   "editor.suggestSelection": "first",
@@ -147,11 +211,11 @@
   "workbench.editor.closeOnFileDelete": true,
   "workbench.tree.enableStickyScroll": true,
   "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.productIconTheme": "icons-carbon",
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.preferredDarkColorTheme": "Moegi Black",
   "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Moegi Space"
+  "workbench.colorTheme": "Monospace Dark"
 }
