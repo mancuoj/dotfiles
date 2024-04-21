@@ -8,8 +8,12 @@ code --install-extension charliermarsh.ruff
 code --install-extension codeium.codeium
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension ddiu8081.moegi-theme
+code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
 code --install-extension fabiospampinato.vscode-open-in-github
+code --install-extension fittentech.fitten-code
+code --install-extension github.vscode-github-actions
+code --install-extension github.vscode-pull-request-github
 code --install-extension hyoban.tailwindcss-classname-highlight
 code --install-extension isudox.vscode-jetbrains-keybindings
 code --install-extension leetcode.vscode-leetcode
@@ -19,6 +23,12 @@ code --install-extension ms-ceintl.vscode-language-pack-zh-hans
 code --install-extension ms-python.debugpy
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags
+code --install-extension ms-toolsai.vscode-jupyter-slideshow
+code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension naumovs.color-highlight
 code --install-extension piyushsarkar.sort-css-properties
 code --install-extension prisma.prisma
