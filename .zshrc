@@ -50,7 +50,7 @@ function up() {
   echo -e "\033[0;34mUpgrading deno ...\033[0m"
   deno upgrade
 
-  echo -e "\033[0;34mUpdating rye ...\033[0m"
+  echo -e "\033[0;34mUpdating rye ...\033[0m"~
   rye self update
 
   echo -e "\033[0;34mUpdating Rust packages ...\033[0m"
@@ -203,5 +203,5 @@ eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
 # zoxide
 eval "$(zoxide init zsh)"
 
-# Turso
+# turso
 export PATH="/home/mancuoj/.turso:$PATH"

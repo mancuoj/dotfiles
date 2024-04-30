@@ -32,6 +32,7 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension naumovs.color-highlight
 code --install-extension piyushsarkar.sort-css-properties
 code --install-extension prisma.prisma
+code --install-extension quick-lint.quick-lint-js
 code --install-extension raillyhugo.one-hunter
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension tamasfe.even-better-toml

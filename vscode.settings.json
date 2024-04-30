@@ -1,19 +1,50 @@
 {
-  // Extensions
-  "extensions.ignoreRecommendations": true,
-  "symbols.hidesExplorerArrows": false,
-  "typeChallenges.workspaceFolder": "/home/mancuoj/Works/type-challenges",
+  // formatters
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.trailingComma": "all",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "[json][jsonc][html][css][markdown][javascript][javascriptreact][typescript][typescriptreact][vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.triggerExpansionOnTab": false,
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
+  },
+
+  // error lens
   "errorLens.enabledDiagnosticLevels": ["warning", "error"],
   "errorLens.excludeBySource": ["cSpell", "eslint"],
 
+  // eslint
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
   "eslint.quiet": true,
 
+  // cspell
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "cSpell.userWords": [
@@ -32,6 +63,17 @@
     "vitepress"
   ],
 
+  // copilot
+  "fittencode.inlineCompletion.enable": true,
+  "codeium.enableCodeLens": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": true
+  },
+
+  // css
   "css.lint.unknownAtRules": "ignore",
   "sortcss.sortOnSave": true,
   "sortcss.sortingStrategy": "smacss",
@@ -44,6 +86,7 @@
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
 
+  // leetcode
   "leetcode.endpoint": "leetcode-cn",
   "leetcode.defaultLanguage": "javascript",
   "leetcode.showDescription": "In Webview",
@@ -54,84 +97,21 @@
   "leetcode.hint.commandShortcut": false,
   "leetcode.hint.setDefaultLanguage": false,
 
-  "codeium.enableCodeLens": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": true
-  },
+  "typeChallenges.workspaceFolder": "/home/mancuoj/Works/type-challenges",
 
-  // Formatters
-  "editor.formatOnSave": true,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.printWidth": 120,
-  "prettier.trailingComma": "all",
-  "[json][jsonc][html][css][markdown][javascript][javascriptreact][typescript][typescriptreact][vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  },
-
-  // Others
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-
+  // git
+  "git.autofetch": true,
+  "git.autoStash": true,
   "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
   "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
   "githubPullRequests.fileListLayout": "tree",
-
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.menus": {
-    "editor": {
-      "blame": false,
-      "clipboard": true,
-      "compare": true,
-      "history": false,
-      "remote": false
-    },
-    "editorGroup": {
-      "blame": true,
-      "compare": false
-    },
-    "editorTab": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "explorer": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "scm": {
-      "authors": true
-    },
-    "scmGroup": {
-      "compare": true,
-      "openClose": true,
-      "stash": true
-    },
-    "scmGroupInline": {
-      "stash": true
-    },
-    "scmItem": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": false,
-      "stash": true
-    }
-  },
 
+  // files
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.readonlyFromPermissions": true,
@@ -147,17 +127,13 @@
     "**/yarn.lock": true
   },
 
-  "workbench.editorAssociations": {
-    "*.db": "sqlite-viewer.option"
-  },
-
-  // Editor
+  // basic
   "editor.fontFamily": "'Nova Nerd Font', 'Input Mono', 'MonoLisa', 'Monaspace Xenon', '霞鹜文楷'",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.tabSize": 2,
   "editor.fontSize": 18,
-  "editor.fontWeight": "700",
-  "editor.lineHeight": 1.8,
+  "editor.fontWeight": "600",
+  "editor.lineHeight": 1.9,
   "editor.lineNumbers": "interval",
   "editor.mouseWheelZoom": true,
   "editor.suggestSelection": "first",
@@ -181,30 +157,32 @@
     ]
   },
 
-  // Terminal
+  // terminal
   "terminal.integrated.fontFamily": "'Mononoki Nerd Font', 'Maple UI'",
   "terminal.integrated.lineHeight": 1.35,
   "terminal.integrated.mouseWheelZoom": true,
   "terminal.integrated.allowChords": false,
+  "remote.autoForwardPortsSource": "hybrid",
 
-  // Smooth
+  // smooth
   "editor.smoothScrolling": true,
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.smoothScrolling": true,
   "workbench.list.smoothScrolling": true,
 
-  // Explorer
+  // explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "explorer.confirmPasteNative": false,
   "explorer.compactFolders": false,
 
-  // Workbench
+  // appearance
   "window.zoomLevel": 1,
-  "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
+  "extensions.ignoreRecommendations": true,
   "security.workspace.trust.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
   "window.menuBarVisibility": "toggle",
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
@@ -217,5 +195,6 @@
   "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.preferredDarkColorTheme": "Moegi Black",
   "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Monospace Dark"
+  "symbols.hidesExplorerArrows": false,
+  "workbench.colorTheme": "Fleet Zero Black"
 }
