@@ -1,13 +1,11 @@
 {
   // formatters
   "editor.formatOnSave": true,
+  "prettier.enable": true,
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.printWidth": 120,
   "prettier.trailingComma": "all",
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  },
   "[json][jsonc][html][css][markdown][javascript][javascriptreact][typescript][typescriptreact][vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -44,20 +42,36 @@
   },
   "eslint.quiet": true,
 
+  // inlay hints
+  // "editor.inlayHints.enabled": "on",
+  // "editor.inlayHints.fontSize": 12,
+  // "typescript.inlayHints.enumMemberValues.enabled": true,
+  // "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+  // "typescript.inlayHints.parameterNames.enabled": "all",
+  // "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  // "typescript.inlayHints.parameterTypes.enabled": false,
+  // "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+  // "typescript.inlayHints.variableTypes.enabled": false,
+  // "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+
   // cspell
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "cSpell.userWords": [
     "antfu",
     "btn",
+    "bunx",
     "clsx",
     "dotfiles",
+    "hono",
     "iconify",
+    "kinde",
     "leetcode",
     "lucide",
     "mancuoj",
     "nextui",
     "nums",
+    "sonner",
     "tailwindcss",
     "typecheck",
     "vitepress"
@@ -65,6 +79,8 @@
 
   // copilot
   "fittencode.inlineCompletion.enable": true,
+  "fittencode.languagePreference.displayPreference": "zh-cn",
+  "fittencode.languagePreference.commentPreference": "zh-cn",
   "codeium.enableCodeLens": false,
   "github.copilot.enable": {
     "*": true,
@@ -128,12 +144,12 @@
   },
 
   // basic
-  "editor.fontFamily": "'Nova Nerd Font', 'Input Mono', 'MonoLisa', 'Monaspace Xenon', '霞鹜文楷'",
+  "editor.fontFamily": "Nova Nerd Font, Monaspace Krypton, Comic Mono, Input Mono, MonoLisa, 霞鹜文楷",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.tabSize": 2,
   "editor.fontSize": 18,
-  "editor.fontWeight": "600",
-  "editor.lineHeight": 1.9,
+  "editor.fontWeight": "500",
+  "editor.lineHeight": 2,
   "editor.lineNumbers": "interval",
   "editor.mouseWheelZoom": true,
   "editor.suggestSelection": "first",
@@ -145,17 +161,19 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "name": "Comment Italics",
-        "scope": ["comment", "punctuation.definition.comment"],
-        "settings": {
-          "fontStyle": "italic"
-        }
-      }
-    ]
-  },
+
+  // italic comments
+  // "editor.tokenColorCustomizations": {
+  //   "textMateRules": [
+  //     {
+  //       "name": "Comment Italics",
+  //       "scope": ["comment", "punctuation.definition.comment"],
+  //       "settings": {
+  //         "fontStyle": "italic"
+  //       }
+  //     }
+  //   ]
+  // },
 
   // terminal
   "terminal.integrated.fontFamily": "'Mononoki Nerd Font', 'Maple UI'",
@@ -176,6 +194,7 @@
   "explorer.confirmDelete": false,
   "explorer.confirmPasteNative": false,
   "explorer.compactFolders": false,
+  "symbols.hidesExplorerArrows": false,
 
   // appearance
   "window.zoomLevel": 1,
@@ -192,9 +211,8 @@
   "workbench.sideBar.location": "left",
   "workbench.productIconTheme": "icons-carbon",
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "Default Light Modern",
-  "workbench.preferredDarkColorTheme": "Moegi Black",
-  "workbench.iconTheme": "symbols",
-  "symbols.hidesExplorerArrows": false,
+  "workbench.preferredLightColorTheme": "One Hunter Flexoki Light",
+  "workbench.preferredDarkColorTheme": "Fleet Black",
+  "workbench.iconTheme": "quill-icons",
   "workbench.colorTheme": "Fleet Zero Black"
 }

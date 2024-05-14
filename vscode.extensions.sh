@@ -30,10 +30,12 @@ code --install-extension ms-toolsai.vscode-jupyter-cell-tags
 code --install-extension ms-toolsai.vscode-jupyter-slideshow
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension naumovs.color-highlight
+code --install-extension oderwat.indent-rainbow
 code --install-extension piyushsarkar.sort-css-properties
 code --install-extension prisma.prisma
 code --install-extension quick-lint.quick-lint-js
 code --install-extension raillyhugo.one-hunter
+code --install-extension rangav.vscode-thunder-client
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension tamasfe.even-better-toml
 code --install-extension trapfether.tailwind-raw-reorder
