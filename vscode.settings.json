@@ -65,12 +65,14 @@
     "dotfiles",
     "hono",
     "iconify",
+    "immer",
     "kinde",
     "leetcode",
     "lucide",
     "mancuoj",
     "nextui",
     "nums",
+    "signup",
     "sonner",
     "tailwindcss",
     "typecheck",
@@ -144,11 +146,11 @@
   },
 
   // basic
-  "editor.fontFamily": "Nova Nerd Font, Monaspace Krypton, Comic Mono, Input Mono, MonoLisa, 霞鹜文楷",
+  "editor.fontFamily": "Nova Nerd Font, Input Mono, Zed Mono, Comic Mono, Monaspace Krypton, MonoLisa, 霞鹜文楷",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.tabSize": 2,
   "editor.fontSize": 18,
-  "editor.fontWeight": "500",
+  "editor.fontWeight": "600",
   "editor.lineHeight": 2,
   "editor.lineNumbers": "interval",
   "editor.mouseWheelZoom": true,
@@ -212,7 +214,7 @@
   "workbench.productIconTheme": "icons-carbon",
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "One Hunter Flexoki Light",
-  "workbench.preferredDarkColorTheme": "Fleet Black",
-  "workbench.iconTheme": "quill-icons",
+  "workbench.preferredDarkColorTheme": "Fleet",
+  "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Fleet Zero Black"
 }
