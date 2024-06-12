@@ -25,6 +25,15 @@
     "notebook.source.organizeImports": "explicit"
   },
 
+  "[go]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "go.formatTool": "gofumpt",
+  "go.lintTool": "golangci-lint",
+  "go.lintOnSave": "off",
+
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
@@ -53,6 +62,13 @@
   // "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
   // "typescript.inlayHints.variableTypes.enabled": false,
   // "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+  // "go.inlayHints.assignVariableTypes": true,
+  // "go.inlayHints.compositeLiteralFields": true,
+  // "go.inlayHints.compositeLiteralTypes": true,
+  // "go.inlayHints.constantValues": true,
+  // "go.inlayHints.functionTypeParameters": true,
+  // "go.inlayHints.parameterNames": true,
+  // "go.inlayHints.rangeVariableTypes": true,
 
   // cspell
   "cSpell.allowCompoundWords": true,
@@ -72,8 +88,10 @@
     "mancuoj",
     "nextui",
     "nums",
+    "println",
     "signup",
     "sonner",
+    "struct",
     "tailwindcss",
     "typecheck",
     "vitepress"
@@ -196,7 +214,9 @@
   "explorer.confirmDelete": false,
   "explorer.confirmPasteNative": false,
   "explorer.compactFolders": false,
+
   "symbols.hidesExplorerArrows": false,
+  "prisma.showPrismaDataPlatformNotification": false,
 
   // appearance
   "window.zoomLevel": 1,
@@ -213,8 +233,8 @@
   "workbench.sideBar.location": "left",
   "workbench.productIconTheme": "icons-carbon",
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "One Hunter Flexoki Light",
-  "workbench.preferredDarkColorTheme": "Fleet",
+  "workbench.preferredLightColorTheme": "GitHub Light Colorblind (Beta)",
+  "workbench.preferredDarkColorTheme": "Vitesse Dark",
   "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Fleet Zero Black"
 }
