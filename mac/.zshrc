@@ -49,7 +49,7 @@ function cl() {
   fi
 }
 
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade"
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && taze latest -gi && rye self update"
 alias ls="lsd"
 alias cd="z"
 alias rm="trash"
@@ -97,5 +97,6 @@ export http_proxy=http://127.0.0.1:7897
 export https_proxy=http://127.0.0.1:7897
 export all_proxy=http://127.0.0.1:7897
 
+source "$HOME/.rye/env"
 eval "$(zoxide init zsh)"
 eval "$(fnm env --use-on-cd)"

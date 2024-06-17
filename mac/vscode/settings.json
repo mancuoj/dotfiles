@@ -1,82 +1,102 @@
 {
-  "editor.fontFamily": "Monaspace Argon",
-  "editor.fontSize": 16,
-  "editor.lineHeight": 2.1,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Moegi Black",
+  "workbench.preferredLightColorTheme": "Moegi Light",
+  "workbench.iconTheme": "symbols",
+  "symbols.hidesExplorerArrows": true,
+
+  "editor.fontFamily": "Input, Monaspace Argon",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 2.2,
   "editor.fontWeight": "500",
-  "editor.mouseWheelZoom": true,
   "editor.fontLigatures": "ss01, ss02, ss03, ss06, zero",
+  "editor.mouseWheelZoom": true,
   "editor.tabSize": 2,
+
+  "terminal.integrated.fontFamily": "Mononoki Nerd Font",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.25,
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.cursorStyle": "line",
+
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "solid",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+
   "editor.lineNumbers": "interval",
   "editor.guides.indentation": false,
   "editor.guides.bracketPairs": false,
-
+  "editor.matchBrackets": "never",
   "editor.suggestSelection": "first",
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
   "editor.dragAndDrop": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
   "editor.quickSuggestions": {
     "strings": "on"
   },
 
-  "terminal.integrated.fontFamily": "Mononoki Nerd Font",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.lineHeight": 1.25,
-  "terminal.integrated.allowChords": false,
-  "terminal.integrated.cursorBlinking": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "gutter",
+  "editor.accessibilitySupport": "off",
+  "editor.lightbulb.enabled": "off",
+  "editor.showFoldingControls": "never",
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.scrollbar.horizontal": "hidden",
 
-  "symbols.hidesExplorerArrows": false,
   "extensions.ignoreRecommendations": true,
   "extensions.autoUpdate": "onlyEnabledExtensions",
-  "security.workspace.trust.enabled": false,
-  "breadcrumbs.enabled": false,
-  "editor.minimap.enabled": false,
-  "workbench.tips.enabled": false,
 
-  "workbench.layoutControl.enabled": true,
+  "workbench.editor.tabActionLocation": "left",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
-  "workbench.editor.tabActionLocation": "left",
   "workbench.tree.enableStickyScroll": true,
+  "workbench.tree.indent": 10,
+  "workbench.tree.renderIndentGuides": "none",
+
+  "window.zoomLevel": 1.3,
+  "breadcrumbs.enabled": false,
+  "security.workspace.trust.enabled": false,
+  "workbench.tips.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "bottom",
-  "window.customTitleBarVisibility": "never",
   "window.titleBarStyle": "native",
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
 
   "apc.electron": {
     "titleBarStyle": "hiddenInset",
     "trafficLightPosition": {
-      "x": 10,
-      "y": 10
+      "x": 12,
+      "y": 9
     }
   },
-  "apc.activityBar": {
-    "size": 90,
-    "itemSize": 33
+  "apc.header": {
+    "height": 30
+  },
+  "apc.sidebar.titlebar": {
+    "height": 30,
+    "fontSize": 12
   },
   "apc.statusBar": {
     "position": "editor-bottom",
-    "height": 34
+    "height": 40
   },
-  "apc.stylesheet": {
-    "#workbench\\.parts\\.sidebar > div.composite.title > div.title-label > div": "display: none;"
+  "apc.listRow": {
+    "lists": ["explorer-folders-view"],
+    "height": 25
   },
-
-  "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
-  "workbench.preferredLightColorTheme": "Moegi Light",
-  "workbench.iconTheme": "catppuccin-mocha",
-
-  "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "smooth",
-  "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
-
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
 
   "editor.formatOnSave": true,
   "prettier.enable": true,
@@ -84,8 +104,19 @@
   "prettier.singleQuote": true,
   "prettier.printWidth": 120,
   "prettier.trailingComma": "all",
-  "[json][jsonc][html][css][markdown][javascript][javascriptreact][typescript][typescriptreact][vue]": {
+  "[json][jsonc][html][css][javascript][javascriptreact][typescript][typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
 
   "css.lint.unknownAtRules": "ignore",
@@ -106,7 +137,7 @@
 
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
-  "cSpell.userWords": ["antfu", "mancuoj"],
+  "cSpell.userWords": ["antfu", "clsx", "cva", "cx", "iconify", "lucide", "mancuoj", "moegi"],
 
   "files.eol": "\n",
   "files.insertFinalNewline": true,
@@ -149,5 +180,53 @@
   "git.enableSmartCommit": true,
   "git.untrackedChanges": "separate",
   "scm.diffDecorationsGutterWidth": 2,
-  "workbench.startupEditor": "none"
+  "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
+  "githubPullRequests.fileListLayout": "tree",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "history": false,
+      "remote": false
+    },
+    "editorGroup": {
+      "blame": true,
+      "compare": false
+    },
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scm": {
+      "authors": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "stash": true
+    }
+  }
 }
