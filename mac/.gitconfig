@@ -1,0 +1,14 @@
+[user]
+	name = mancuoj
+	email = mancuoj@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = code --wait
+	excludesfile = ~/.gitignore_global
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
