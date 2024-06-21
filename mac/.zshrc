@@ -92,6 +92,10 @@ alias gr='git reset'
 alias grh='gr HEAD'
 alias grh1='gr HEAD~1'
 
+export http_proxy=http://127.0.0.1:7897
+export https_proxy=http://127.0.0.1:7897
+export all_proxy=http://127.0.0.1:7897
+
 source "$HOME/.rye/env"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
