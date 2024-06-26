@@ -29,7 +29,7 @@
   "editor.dragAndDrop": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
+  "explorer.compactFolders": true,
   "editor.quickSuggestions": {
     "strings": "on"
   },
@@ -57,7 +57,7 @@
   "workbench.tree.indent": 10,
   "workbench.tree.renderIndentGuides": "none",
 
-  "window.zoomLevel": 1.2,
+  "window.zoomLevel": 1,
   "breadcrumbs.enabled": false,
   "security.workspace.trust.enabled": false,
   "workbench.tips.enabled": false,
@@ -109,6 +109,14 @@
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[java]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "java.configuration.updateBuildConfiguration": "automatic",
   "[python]": {
     "editor.tabSize": 4,
     "editor.codeActionsOnSave": {
@@ -117,6 +125,15 @@
     },
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+  "[typst]": {
+    "editor.formatOnSave": true
+  },
+  "tinymist.formatterMode": "typstfmt",
 
   "css.lint.unknownAtRules": "ignore",
   "css.lint.hexColorLength": "ignore",
@@ -136,17 +153,7 @@
 
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
-  "cSpell.userWords": [
-    "antfu",
-    "clsx",
-    "cva",
-    "nuxt",
-    "cx",
-    "iconify",
-    "lucide",
-    "mancuoj",
-    "moegi"
-  ],
+  "cSpell.userWords": ["antfu", "clsx", "cva", "cx", "iconify", "lucide", "mancuoj", "moegi", "nuxt", "servlet"],
 
   "files.eol": "\n",
   "files.autoSave": "onWindowChange",
@@ -181,7 +188,11 @@
     "**/temp": true,
     "**/yarn.lock": true,
     "**/CHANGELOG*": true,
-    "**/LICENSE*": true
+    "**/LICENSE*": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
 
   "git.autofetch": true,
@@ -195,53 +206,10 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.currentLine.enabled": false,
-  "gitlens.menus": {
-    "editor": {
-      "blame": false,
-      "clipboard": true,
-      "compare": true,
-      "history": false,
-      "remote": false
-    },
-    "editorGroup": {
-      "blame": true,
-      "compare": false
-    },
-    "editorTab": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "explorer": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "scm": {
-      "authors": true
-    },
-    "scmGroup": {
-      "compare": true,
-      "openClose": true,
-      "stash": true
-    },
-    "scmGroupInline": {
-      "stash": true
-    },
-    "scmItem": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": false,
-      "stash": true
-    }
-  },
 
   "window.autoDetectColorScheme": true,
   "workbench.iconTheme": "symbols",
   "symbols.hidesExplorerArrows": true,
   "workbench.preferredLightColorTheme": "Moegi Light",
-  "workbench.preferredDarkColorTheme": "Moegi Black Zen"
+  "workbench.preferredDarkColorTheme": "Fleet Zero"
 }
