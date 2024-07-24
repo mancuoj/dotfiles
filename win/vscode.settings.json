@@ -9,7 +9,10 @@
   "[json][jsonc][html][css][markdown][javascript][javascriptreact][typescript][typescriptreact][vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
+  "[toml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
   "[python]": {
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
@@ -24,7 +27,6 @@
     "notebook.source.fixAll": "explicit",
     "notebook.source.organizeImports": "explicit"
   },
-
   "[go]": {
     "editor.tabSize": 4,
     "editor.formatOnSave": true
@@ -33,13 +35,8 @@
   "go.formatTool": "gofumpt",
   "go.lintTool": "golangci-lint",
   "go.lintOnSave": "off",
-
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
-
-  "workbench.editorAssociations": {
-    "*.db": "sqlite-viewer.option"
-  },
 
   // error lens
   "errorLens.enabledDiagnosticLevels": ["warning", "error"],
@@ -52,8 +49,8 @@
   "eslint.quiet": true,
 
   // inlay hints
-  // "editor.inlayHints.enabled": "on",
-  // "editor.inlayHints.fontSize": 12,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.inlayHints.fontSize": 12,
   // "typescript.inlayHints.enumMemberValues.enabled": true,
   // "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
   // "typescript.inlayHints.parameterNames.enabled": "all",
@@ -79,6 +76,7 @@
     "bunx",
     "clsx",
     "dotfiles",
+    "elif",
     "hono",
     "iconify",
     "immer",
@@ -148,8 +146,9 @@
   "gitlens.codeLens.recentChange.enabled": false,
 
   // files
-  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
   "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
   "files.readonlyFromPermissions": true,
   "files.readonlyInclude": {
     "**/node_modules/**": true,
@@ -158,9 +157,35 @@
     "**/yarn.lock": true
   },
   "search.exclude": {
+    "**/*.snap": true,
+    "**/*.svg": true,
+    "**/.git": true,
+    "**/.github": false,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/assets": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
-    "**/yarn.lock": true
+    "**/public": true,
+    "**/temp": true,
+    "**/yarn.lock": true,
+    "**/CHANGELOG*": true,
+    "**/LICENSE*": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
   },
 
   // basic
@@ -183,17 +208,17 @@
   },
 
   // italic comments
-  // "editor.tokenColorCustomizations": {
-  //   "textMateRules": [
-  //     {
-  //       "name": "Comment Italics",
-  //       "scope": ["comment", "punctuation.definition.comment"],
-  //       "settings": {
-  //         "fontStyle": "italic"
-  //       }
-  //     }
-  //   ]
-  // },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Comment Italics",
+        "scope": ["comment", "punctuation.definition.comment"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
 
   // terminal
   "terminal.integrated.fontFamily": "'Mononoki Nerd Font', 'Maple UI'",
@@ -214,12 +239,11 @@
   "explorer.confirmDelete": false,
   "explorer.confirmPasteNative": false,
   "explorer.compactFolders": false,
-
   "symbols.hidesExplorerArrows": false,
-  "prisma.showPrismaDataPlatformNotification": false,
 
   // appearance
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 1.2,
+  "workbench.editor.tabActionLocation": "left",
   "extensions.ignoreRecommendations": true,
   "security.workspace.trust.enabled": false,
   "breadcrumbs.enabled": false,
@@ -229,12 +253,12 @@
   "workbench.layoutControl.enabled": false,
   "workbench.editor.closeOnFileDelete": true,
   "workbench.tree.enableStickyScroll": true,
-  "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "left",
+  "workbench.activityBar.location": "bottom",
+  "workbench.sideBar.location": "right",
   "workbench.productIconTheme": "icons-carbon",
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "GitHub Light Colorblind (Beta)",
-  "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  "workbench.preferredDarkColorTheme": "Black Modern",
   "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Fleet Zero Black"
 }
