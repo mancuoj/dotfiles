@@ -1,3 +1,4 @@
+code --install-extension antfu.file-nesting
 code --install-extension antfu.iconify
 code --install-extension antfu.icons-carbon
 code --install-extension antfu.open-in-github-button
@@ -6,6 +7,7 @@ code --install-extension bradlc.vscode-tailwindcss
 code --install-extension catppuccin.catppuccin-vsc
 code --install-extension catppuccin.catppuccin-vsc-icons
 code --install-extension charliermarsh.ruff
+code --install-extension codeium.codeium
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension ddiu8081.moegi-theme
 code --install-extension drcika.apc-extension
@@ -22,7 +24,7 @@ code --install-extension golang.go
 code --install-extension hyoban.tailwindcss-classname-highlight
 code --install-extension isudox.vscode-jetbrains-keybindings
 code --install-extension johnsoncodehk.vscode-tsconfig-helper
-code --install-extension mgt19937.typst-preview
+code --install-extension marscode.marscode-extension
 code --install-extension miguelsolorio.symbols
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.debugpy

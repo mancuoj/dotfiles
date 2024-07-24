@@ -48,10 +48,11 @@ function cl() {
   fi
 }
 
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && taze latest -gi"
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && taze latest -gi"
 alias ls="lsd"
 alias cd="z"
 alias rm="trash"
+alias cat="bat"
 alias p="cd ~/Projects"
 alias works="cd ~/Works"
 
@@ -80,6 +81,7 @@ alias gA='ga -A'
 alias gc='git commit'
 alias gcm='gc -m'
 alias gam='gA && gcm'
+alias onemore='gc -a --amend --no-edit'
 alias gi='git init'
 alias gii='gi && gam "chore: init"'
 alias gb='git branch'
@@ -89,8 +91,8 @@ alias gcob='gco -b'
 alias main='gco main'
 alias dev='gco dev'
 alias gr='git reset'
-alias grh='gr HEAD'
-alias grh1='gr HEAD~1'
+alias undo='gr --soft HEAD^'
+alias cancel='gr --hard HEAD^'
 
 export http_proxy=http://127.0.0.1:7897
 export https_proxy=http://127.0.0.1:7897
