@@ -1,0 +1,25 @@
+cursor --install-extension FaroSystemAppender constructor
+cursor --install-extension antfu.file-nesting
+cursor --install-extension bradlc.vscode-tailwindcss
+cursor --install-extension catppuccin.catppuccin-vsc
+cursor --install-extension catppuccin.catppuccin-vsc-icons
+cursor --install-extension charliermarsh.ruff
+cursor --install-extension dbaeumer.vscode-eslint
+cursor --install-extension ddiu8081.moegi-theme
+cursor --install-extension esbenp.prettier-vscode
+cursor --install-extension franzgollhammer.jb-fleet-dark
+cursor --install-extension hyoban.tailwindcss-classname-highlight
+cursor --install-extension isudox.vscode-jetbrains-keybindings
+cursor --install-extension ms-ceintl.vscode-language-pack-zh-hans
+cursor --install-extension ms-python.debugpy
+cursor --install-extension ms-python.python
+cursor --install-extension ms-python.vscode-pylance
+cursor --install-extension piyushsarkar.sort-css-properties
+cursor --install-extension qwtel.sqlite-viewer
+cursor --install-extension raunofreiberg.vesper
+cursor --install-extension streetsidesoftware.code-spell-checker
+cursor --install-extension trapfether.tailwind-raw-reorder
+cursor --install-extension usernamehw.errorlens
+cursor --install-extension vitest.explorer
+cursor --install-extension wakatime.vscode-wakatime
+cursor --install-extension yandeu.five-server
