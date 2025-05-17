@@ -1,0 +1,10 @@
+[
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "d": "project_panel::Trash",
+      "r": "project_panel::Rename"
+    }
+  }
+]

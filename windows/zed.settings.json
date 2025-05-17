@@ -1,15 +1,9 @@
 {
-  "agent": {
-    "model_parameters": [],
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
-    },
-    "version": "2"
-  },
+  "proxy": "http://127.0.0.1:7897",
   "base_keymap": "JetBrains",
   "ui_font_size": 17,
   "buffer_font_size": 18.5,
+  // "buffer_font_family": "Maple Mono NF CN",
   "buffer_font_family": "ZedMono Nerd Font Mono",
   "buffer_font_weight": 500,
   "buffer_font_fallbacks": ["Maple Mono NF CN"],
@@ -83,5 +77,22 @@
     "scrollbar": {
       "show": null
     }
+  },
+  "agent": {
+    "version": "2",
+    "enabled": true,
+    "button": true,
+    "dock": "right",
+    "default_width": 640,
+    "default_height": 320,
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
+    },
+    "editor_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
+    },
+    "single_file_review": true
   }
 }
