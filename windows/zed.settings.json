@@ -1,0 +1,87 @@
+{
+  "agent": {
+    "model_parameters": [],
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "base_keymap": "JetBrains",
+  "ui_font_size": 17,
+  "buffer_font_size": 18.5,
+  "buffer_font_family": "ZedMono Nerd Font Mono",
+  "buffer_font_weight": 500,
+  "buffer_font_fallbacks": ["Maple Mono NF CN"],
+  "buffer_line_height": "comfortable",
+  "tab_size": 2,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha",
+    "dark": "One Dark"
+  },
+  "tabs": {
+    "close_position": "left",
+    "file_icons": true,
+    "git_status": true,
+    "activate_on_close": "history",
+    "show_close_button": "always",
+    "show_diagnostics": "off"
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true,
+    "selections_menu": true,
+    "agent_review": true
+  },
+  "scrollbar": {
+    "show": "auto",
+    "cursors": true,
+    "git_diff": true,
+    "search_results": true,
+    "selected_text": true,
+    "selected_symbol": true,
+    "diagnostics": "all",
+    "axes": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": false,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50,
+    "toggle_on_modifiers_press": null
+  },
+  "terminal": {
+    "alternate_scroll": "off",
+    "blinking": "terminal_controlled",
+    "copy_on_select": false,
+    "dock": "bottom",
+    "default_width": 640,
+    "default_height": 320,
+    "detect_venv": {
+      "on": {
+        "directories": [".env", "env", ".venv", "venv"],
+        "activate_script": "default"
+      }
+    },
+    "env": {},
+    "font_size": 15,
+    "line_height": "comfortable",
+    "option_as_meta": false,
+    "button": true,
+    "shell": "system",
+    "toolbar": {
+      "breadcrumbs": true
+    },
+    "working_directory": "current_project_directory",
+    "scrollbar": {
+      "show": null
+    }
+  }
+}

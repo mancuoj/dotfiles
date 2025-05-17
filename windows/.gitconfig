@@ -1,0 +1,11 @@
+[user]
+	name = mancuoj
+	email = mancuoj@gmail.com
+[init]
+	defaultBranch = main
+[credential "https://github.com"]
+	helper =
+	helper = !'C:\\Users\\13373.HH\\scoop\\apps\\gh\\current\\bin\\gh.exe' auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !'C:\\Users\\13373.HH\\scoop\\apps\\gh\\current\\bin\\gh.exe' auth git-credential

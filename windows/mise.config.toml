@@ -1,0 +1,7 @@
+[tools]
+bat = "latest"
+bun = "latest"
+go = "latest"
+node = "lts"
+pnpm = "latest"
+python = "3"
