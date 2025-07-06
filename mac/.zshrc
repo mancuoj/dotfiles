@@ -48,13 +48,11 @@ function cl() {
   fi
 }
 
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && taze latest -gi"
-alias ls="lsd"
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup"
+alias ls="eza -x --sort=type --icons=auto --width=60"
 alias cd="z"
-alias rm="trash"
 alias cat="bat"
 alias p="cd ~/Projects"
-alias works="cd ~/Works"
 
 alias nio='ni --prefer-offline'
 alias s='nr start'
@@ -91,18 +89,12 @@ alias gcob='gco -b'
 alias main='gco main'
 alias dev='gco dev'
 alias gr='git reset'
-alias undo='gr --soft HEAD^'
-alias cancel='gr --hard HEAD^'
 
-export http_proxy=http://127.0.0.1:7897
-export https_proxy=http://127.0.0.1:7897
-export all_proxy=http://127.0.0.1:7897
+export https_proxy="http://127.0.0.1:7897"
+export http_proxy="http://127.0.0.1:7897"
+export all_proxy="http://127.0.0.1:7897"
 
-source "$HOME/.rye/env"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+export PATH=$PATH:/Users/mancuoj/.local/bin
+
 eval "$(zoxide init zsh)"
-eval "$(fnm env --use-on-cd)"
+eval "$(mise activate zsh)"

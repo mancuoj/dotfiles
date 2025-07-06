@@ -1,3 +1,4 @@
+cursor --install-extension angular.ng-template
 cursor --install-extension antfu.file-nesting
 cursor --install-extension antfu.iconify
 cursor --install-extension antfu.open-in-github-button
@@ -10,18 +11,20 @@ cursor --install-extension ddiu8081.moegi-theme
 cursor --install-extension esbenp.prettier-vscode
 cursor --install-extension fabiospampinato.vscode-open-in-github
 cursor --install-extension franzgollhammer.jb-fleet-dark
+cursor --install-extension github.github-vscode-theme
 cursor --install-extension golang.go
 cursor --install-extension hyoban.tailwindcss-classname-highlight
 cursor --install-extension isudox.vscode-jetbrains-keybindings
 cursor --install-extension lokalise.i18n-ally
 cursor --install-extension miguelsolorio.symbols
 cursor --install-extension ms-azuretools.vscode-docker
-cursor --install-extension ms-ceintl.vscode-language-pack-zh-hans
 cursor --install-extension ms-python.debugpy
 cursor --install-extension ms-python.python
 cursor --install-extension ms-python.vscode-pylance
+cursor --install-extension naumovs.color-highlight
 cursor --install-extension oderwat.indent-rainbow
 cursor --install-extension piyushsarkar.sort-css-properties
+cursor --install-extension prisma.prisma
 cursor --install-extension qwtel.sqlite-viewer
 cursor --install-extension raunofreiberg.vesper
 cursor --install-extension redhat.vscode-yaml
@@ -31,5 +34,6 @@ cursor --install-extension usernamehw.errorlens
 cursor --install-extension vitest.explorer
 cursor --install-extension vue.volar
 cursor --install-extension wakatime.vscode-wakatime
+cursor --install-extension wasp-lang.wasp
 cursor --install-extension wayou.vscode-todo-highlight
 cursor --install-extension yandeu.five-server
