@@ -48,11 +48,12 @@ function cl() {
   fi
 }
 
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup"
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mise up"
 alias ls="eza -x --sort=type --icons=auto --width=60"
 alias cd="z"
 alias cat="bat"
 alias p="cd ~/Projects"
+alias rm="trash"
 
 alias nio='ni --prefer-offline'
 alias s='nr start'
@@ -98,3 +99,6 @@ export PATH=$PATH:/Users/mancuoj/.local/bin
 
 eval "$(zoxide init zsh)"
 eval "$(mise activate zsh)"
+
+# bun completions
+[ -s "/Users/mancuoj/.bun/_bun" ] && source "/Users/mancuoj/.bun/_bun"
