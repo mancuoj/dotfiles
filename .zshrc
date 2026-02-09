@@ -95,10 +95,11 @@ export https_proxy="http://127.0.0.1:7897"
 export http_proxy="http://127.0.0.1:7897"
 export all_proxy="http://127.0.0.1:7897"
 
-export PATH=$PATH:/Users/mancuoj/.local/bin
-
 eval "$(zoxide init zsh)"
 eval "$(mise activate zsh)"
 
 # bun completions
 [ -s "/Users/mancuoj/.bun/_bun" ] && source "/Users/mancuoj/.bun/_bun"
+
+export PATH=$PATH:/Users/mancuoj/.local/bin
+export PATH="/Users/mancuoj/.antigravity/antigravity/bin:$PATH"

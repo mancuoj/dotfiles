@@ -1,0 +1,65 @@
+{
+  "window.zoomLevel": 0.4,
+
+  "editor.tabSize": 2,
+  "editor.fontFamily": "等距更纱黑体 SC",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.78,
+  "editor.fontWeight": "500",
+  "editor.fontLigatures": "true",
+  "editor.mouseWheelZoom": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.suggest.insertMode": "replace",
+  "editor.dragAndDrop": false,
+  
+  "terminal.integrated.fontFamily": "Mononoki Nerd Font",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.smoothScrolling": true,
+
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
+
+  "workbench.startupEditor": "none",
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.tabActionLocation": "left",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
+
+  "editor.formatOnSave": false,
+  "prettier.enable": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 100,
+  "prettier.trailingComma": "all",
+  "[json][jsonc][html][css][javascript][javascriptreact][typescript][typescriptreact][markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go][lua]": {
+    "editor.tabSize": 4
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "security.workspace.trust.enabled": false,
+  "extensions.ignoreRecommendations": true,
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "errorLens.excludeBySource": ["cSpell", "eslint"],
+  "cSpell.allowCompoundWords": true,
+  "cSpell.language": "en,en-US",
+
+  "github.copilot.chat.agent.autoFix": true,
+  "github.copilot.nextEditSuggestions.enabled": true
+}
