@@ -1,8 +1,0 @@
-[tools]
-bat = "latest"
-bun = "latest"
-go = "latest"
-node = "lts"
-pnpm = "latest"
-python = "latest"
-rust = "latest"

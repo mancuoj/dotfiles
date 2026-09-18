@@ -53,6 +53,7 @@ alias ls="eza -x --sort=type --icons=auto --width=60"
 alias cd="z"
 alias cat="bat"
 alias p="cd ~/Projects"
+alias cs="cd ~/CS"
 alias rm="trash"
 
 alias nio='ni --prefer-offline'
@@ -91,15 +92,9 @@ alias main='gco main'
 alias dev='gco dev'
 alias gr='git reset'
 
-export https_proxy="http://127.0.0.1:7897"
-export http_proxy="http://127.0.0.1:7897"
-export all_proxy="http://127.0.0.1:7897"
-
-eval "$(zoxide init zsh)"
-eval "$(mise activate zsh)"
-
-# bun completions
-[ -s "/Users/mancuoj/.bun/_bun" ] && source "/Users/mancuoj/.bun/_bun"
+export https_proxy="http://127.0.0.1:7890"
+export http_proxy="http://127.0.0.1:7890"
+export all_proxy="http://127.0.0.1:7890"
 
 export PATH=$PATH:/Users/mancuoj/.local/bin
 
@@ -110,3 +105,6 @@ export PATH=$PATH:/Users/mancuoj/.local/bin
 # This section can be safely removed at any time if needed.
 [[ ! -r '/Users/mancuoj/.opam/opam-init/init.zsh' ]] || source '/Users/mancuoj/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+
+eval "$(zoxide init zsh)"
+eval "$(mise activate zsh)"

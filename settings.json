@@ -1,19 +1,18 @@
 {
-  "window.zoomLevel": 0.4,
-
   "editor.tabSize": 2,
-  "editor.fontFamily": "等距更纱黑体 SC",
-  "editor.fontSize": 15,
-  "editor.lineHeight": 1.78,
-  "editor.fontWeight": "500",
+  "editor.fontFamily": "Sarasa Mono SC",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.6,
+  "editor.fontWeight": "400",
   "editor.fontLigatures": "true",
-  "editor.mouseWheelZoom": true,
+  "editor.mouseWheelZoom": false,
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.suggest.insertMode": "replace",
   "editor.dragAndDrop": false,
-  
-  "terminal.integrated.fontFamily": "Mononoki Nerd Font",
+  "editor.minimap.enabled": false,
+
+  "terminal.integrated.fontFamily": "Mononoki Nerd Font Mono",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.smoothScrolling": true,
@@ -22,15 +21,18 @@
   "explorer.confirmDelete": false,
   "explorer.confirmPasteNative": false,
 
+  "window.nativeTabs": true,
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
+  "workbench.browser.showInTitleBar": false,
   "workbench.startupEditor": "none",
   "workbench.list.smoothScrolling": true,
   "workbench.editor.tabActionLocation": "left",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.layoutControl.enabled": false,
   "workbench.navigationControl.enabled": false,
 
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "prettier.enable": true,
   "prettier.semi": false,
   "prettier.singleQuote": true,
@@ -39,8 +41,9 @@
   "[json][jsonc][html][css][javascript][javascriptreact][typescript][typescriptreact][markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[go][lua]": {
-    "editor.tabSize": 4
+  "[go][lua][rust]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
   },
   "[python]": {
     "editor.tabSize": 4,
@@ -50,16 +53,24 @@
     },
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
 
-  "files.eol": "\n",
+  "chat.disableAIFeatures": true,
   "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "security.workspace.trust.enabled": false,
   "extensions.ignoreRecommendations": true,
   "errorLens.enabledDiagnosticLevels": ["error", "warning"],
   "errorLens.excludeBySource": ["cSpell", "eslint"],
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
+  "git.confirmSync": false,
 
-  "github.copilot.chat.agent.autoFix": true,
-  "github.copilot.nextEditSuggestions.enabled": true
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Light Modern",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Colorblind (Beta)",
+  "cSpell.userWords": ["flexoki", "gpui", "mancuoj", "tasu"],
+  "workbench.iconTheme": "icons"
 }
